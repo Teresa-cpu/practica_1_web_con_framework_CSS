@@ -1,3 +1,9 @@
+:root {
+    --Marron_clarito: #FEFFF1;
+    --Marron_oscuro: #4C3E30;
+}
+
+
 body {
-    background-color: antiquewhite;
+    background-color: var(--Marron_clarito);
 }
