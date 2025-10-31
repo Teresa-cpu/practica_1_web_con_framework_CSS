@@ -11,45 +11,46 @@
 }
 
 body {
-    background-color: var(--Marron_clarito);
+    background-color: var(--Marron_oscuro);
 }
 
 /* MENU  */
 
 .navbar {
-    background-color: var(--Marron_oscuro);
+    background-color: var(--Marron_clarito);
 }
 
 .navbar .nav-link{
-    color: var(--Marron_clarito);
+    color: var(--Marron_oscuro);
     font-size: 0.9rem;
     font-family: var(--menu_tipo);
     margin-right: 1rem;
     position: relative;
+    font-weight: 600;
 }
 
 .navbar .navbar-brand{
     font-size: 2rem;
     font-family: var(--titulos_tipo);
-    color: var(--Marron_clarito);
+    color: var(--Marron_ocsuro);
 }
 
 .offcanvas-header {
-    background-color: var(--Marron_oscuro);
+    background-color: var(--Marron_clarito);
 }
 
 .offcanvas-body {
-    background-color: var(--Marron_oscuro);
+    background-color: var(--Marron_clarito);
 }
 
 .offcanvas-title {
     font-size: 1.5rem;
     font-family: var(--titulos_tipo);
-    color: var(--Marron_clarito);
+    color: var(--Marron_oscuro);
 }
 
 .btn-close {
-    color: var(--Marron_clarito);
+    color: var(--Marron_oscuro);
 }
 
 .navbar-toggler {
@@ -65,6 +66,8 @@ body {
     color: var(--Marron_clarito);
 }
 
-
-
+.fa-solid {
+    color: var(--Marron_oscuro);
+    font-size: 1.3rem;
+}
 
