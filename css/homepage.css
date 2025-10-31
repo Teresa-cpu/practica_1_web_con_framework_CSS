@@ -1,0 +1,19 @@
+/* _________ HOMEPAGE _________ */
+
+/* VIDEO */
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* adrian: */
+    /* padding-top: 4rem; */
+    /* height: 73vh; */
+    /* overflow: hidden; */
+}
+
+#center-video {
+    width: 100%;
+    height: auto;
+}
