@@ -8,6 +8,7 @@
     --titulos_tipo: 'Bebas Neue';
     --menu_tipo: 'Yaldevi';
     --texto_tipo: 'Roboto';
+    --rojo_oscuro: #520100;
 }
 
 body {
@@ -31,6 +32,11 @@ body {
     margin-right: 1rem;
     position: relative;
     font-weight: 600;
+}
+
+.navbar .nav-link:hover{
+    color: var(--rojo_oscuro);
+    font-size: 1.1rem;
 }
 
 .navbar .navbar-brand{
