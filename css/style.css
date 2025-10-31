@@ -11,13 +11,17 @@
 }
 
 body {
-    background-color: var(--Marron_oscuro);
+    background-color: var(--Marron_clarito);
 }
 
 /* MENU  */
 
 .navbar {
     background-color: var(--Marron_clarito);
+}
+
+.logo_nestle{
+    width: 10vh;
 }
 
 .navbar .nav-link{
@@ -49,8 +53,15 @@ body {
     color: var(--Marron_oscuro);
 }
 
+.fa-solid {
+    color: var(--Marron_oscuro);
+    font-size: 1.3rem;
+    opacity: none;
+}
+
 .btn-close {
     color: var(--Marron_oscuro);
+    --bs-btn-close-bg:none;
 }
 
 .navbar-toggler {
@@ -66,8 +77,4 @@ body {
     color: var(--Marron_clarito);
 }
 
-.fa-solid {
-    color: var(--Marron_oscuro);
-    font-size: 1.3rem;
-}
 
