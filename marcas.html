@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- ----------- PROPIO CSS ----------- -->
      <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/marcas.css">
       <!-- FONT AWESOME  -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
@@ -51,9 +52,22 @@
           </div>
         </div>
       </nav>
-      <!-- FIN MENU -->
+
+       <!-- MARCAS VIDEO -->
+    
+       <div class="contenedor-video-marcas">
+          <video autoplay muted loop id="video-fondo-marcas">
+          <source src="media/video/marcas_cocinando.mp4" type="video/mp4">
+          </video>
+          <div class="letra-video-marcas">
+            <h1>MARCAS</h1>
+            <P id="texto-pequeño-video">En Nestlé tenemos más de 2000 marcas comercializadas en el mundo. 
+              En esta sección, tendrás la oportunidad de descubrir nuestras marcas en España</P>
+          </div>
+       </div>
 
       <!-- TARJETAS  -->
+       <div id="tarjetas">
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
           <div class="card h-100">
@@ -92,6 +106,7 @@
           </div>
         </div>
       </div>
+       </div>
     
 
 
