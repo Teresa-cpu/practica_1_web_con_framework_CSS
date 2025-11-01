@@ -14,10 +14,14 @@
 
 /* _________ MARCAS _________ */
 
-.contenedor-video-marca{
+.contenedor-video-marcas {
     position: relative;
     width: 100%;
     overflow: hidden;
+    min-height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #video-fondo-marcas{
@@ -42,6 +46,10 @@
     font-family: var(--titulos_tipo);
     font-size: 13rem;
     height: 12rem;
+    line-height: 1;
+  opacity: 0;
+  transform: translateY(30px) scale(0.95);
+  will-change: transform, opacity;
 }
 
 #texto-pequeño-video{
@@ -52,10 +60,10 @@
 /* TARJETAS  */
 
 #tarjetas {
-    padding-top: 155vh;
+    padding-top: 20vh;
     /* padding-top: 115vh; */
-    padding-left: 3rem;
-    padding-right: 3rem;
+    /* padding-left: 2rem;
+    padding-right: 2rem; */
     transform: scale(0.7); 
     transform-origin: top center; 
 }
