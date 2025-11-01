@@ -8,6 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- ----------- PROPIO CSS ----------- -->
      <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/homepage.css">
+     <link rel="stylesheet" href="css/marcas.css">
   </head>
   <body>
      <!-- MENU  -->
@@ -50,27 +52,122 @@
       </nav>
 
       <!-- HOMEPAGE VIDEO -->
-       <header>
-         <!-- <h1>NESTLÉ</h1>
-         <p>Comprometidos con las personas y el planeta, porque cada acción cuenta para construir un mañana mejor.</p> -->
-         <div class="video-container">
-           <video autoplay muted loop id="center-video">
-               <source src="media/video/video_home.mp4" type="video/mp4">
-           </video>
-         </div>
-      </header>
+        
+      <div class="contenedor-video">
+        <video autoplay muted loop id="video-fondo">
+          <source src="media/video/video_home.mp4" type="video/mp4">
+        </video>
+        <div class="letra-video">
+          <h1>NESTLÉ</h1>
+          <p id="texto-pequeño-video">Comprometidos con las personas y el planeta, porque cada acción cuenta para construir un mañana mejor</p>
+        </div>
+      </div>
+
+      <!-- TARJETAS -->
+
+   <!-- TARJETA COMBINADA -->
+    <div class="container tarjetas-home">
+  <div class="row g-4">
+
+    <div class="col-md-6">
+      <div class="card perfil-card shadow-lg border-0 rounded-4 mb-4">
+        <!-- Contenido tarjeta 1 -->
+        <div class="row g-0 align-items-center">
+          <div class="col-md-4">
+            <img src="media/img/nutriplato.png" class="img-fluid rounded-start" alt="Foto de perfil">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h4 class="card-title fw-bold text-primary mb-1">Método Nutriplato</h4>
+              <p class="card-text text-secondary">Es el método ideal para que tus hijos sigan una dieta equilibrada.</p>
+              <a href="#" class="btn btn-outline-secondary mt-auto btn-cards-home">Ver Más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card perfil-card shadow-lg border-0 rounded-4 mb-4">
+        <!-- Contenido tarjeta 2 -->
+        <div class="row g-0 align-items-center">
+          <div class="col-md-4">
+            <img src="media/img/sostenible.jpg" class="img-fluid rounded-start" alt="Foto de perfil">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h4 class="card-title fw-bold text-primary mb-1">Medio Ambiente</h4>
+              <p class="card-text text-secondary">Productos, recetas y menús para mejorar la salud de las personas y del planeta.</p>
+              <a href="#" class="btn btn-outline-secondary mt-auto btn-cards-home">Ver Más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card perfil-card shadow-lg border-0 rounded-4 mb-4">
+        <!-- Contenido tarjeta 3 -->
+        <div class="row g-0 align-items-center">
+          <div class="col-md-4">
+            <img src="media/img/famili_club.jpeg" class="img-fluid rounded-start" alt="Foto de perfil">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h4 class="card-title fw-bold text-primary mb-1">Nestlé Family Club</h4>
+              <p class="card-text text-secondary">Cupones, novedades, promociones, recetas y consejos para ayudarte a vivir mejor a través de la nutrición.</p>
+              <a href="#" class="btn btn-outline-secondary mt-auto btn-cards-home">Ver Más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card perfil-card shadow-lg border-0 rounded-4 mb-4">
+        <!-- Contenido tarjeta 4 -->
+        <div class="row g-0 align-items-center">
+          <div class="col-md-4">
+            <img src="media/img/cero_emisiones.jpg" class="img-fluid rounded-start" alt="Foto de perfil">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h4 class="card-title fw-bold text-primary mb-1">Cero Emisiones</h4>
+              <p class="card-text text-secondary">La lucha contra el cambio climático no puede esperar y nosotros tampoco. Presentamos nuestra hoja de ruta para alcanzar cero emisiones netas en 2050.</p>
+              <a href="#" class="btn btn-outline-secondary mt-auto btn-cards-home">Ver Más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
 
 
-      <!-- FIN HOMEPAGE VIDEO -->
+
+
+
+
+
+
+
+
+
+
   
+    <!-- JAVASCRIPT LENIS -->
+    <script src="https://unpkg.com/lenis@1.3.13/dist/lenis.min.js"></script> 
 
     <!-- JAVASCRIPT BOOTSTRAP  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
-     <!-- JAVASCRIPT: JQUERY -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- JAVASCRIPT: JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-     <!-- MY JS SCRIPT  -->
-      <script src="js/script.js"></script>
+    <!-- MY JS SCRIPT  -->
+    <script src="js/script.js"></script>
+    <script src="js/marcas.js"></script>
+      
   </body>
 </html>

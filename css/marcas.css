@@ -12,52 +12,6 @@
 }
 
 
-/* _________ MARCAS _________ */
-
-/* video + headrer  */
-
-.contenedor-video-marcas {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    min-height: 100vh; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#video-fondo-marcas{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.letra-video-marcas{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    color: var(--Marron_clarito);
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.letra-video-marcas h1{
-    font-family: var(--titulos_tipo);
-    font-size: 13rem;
-    height: 12rem;
-    line-height: 1;
-  opacity: 0;
-  transform: translateY(30px) scale(0.95);
-  will-change: transform, opacity;
-}
-
-#texto-pequeño-video{
-    font-family: var(--texto_tipo);
-
-}
 
 /* TARJETAS  */
 

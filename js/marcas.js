@@ -31,14 +31,14 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('GSAP y ScrollTrigger activos:', gsap ? true : false, typeof ScrollTrigger !== 'undefined');
   
     // Animación del H1
-    gsap.fromTo(".letra-video-marcas h1",
+    gsap.fromTo(".letra-video h1",
       { y: 80, opacity: 0, scale: 0.95 },
       {
         y: 0, opacity: 1, scale: 1,
         ease: "power3.out",
         duration: 1.2,
         scrollTrigger: {
-          trigger: ".letra-video-marcas",
+          trigger: ".letra-video",
           start: "top 85%", 
           end: "bottom 50%",
           toggleActions: "play reverse play reverse",
@@ -51,14 +51,14 @@ document.addEventListener('DOMContentLoaded', function() {
     );
   
     // párrafo pequeño
-    gsap.from(".letra-video-marcas #texto-pequeño-video", {
+    gsap.from(".letra-video #texto-pequeño-video", {
       y: 30,
       opacity: 0,
       delay: 0.15,
       duration: 0.9,
       ease: "power2.out",
       scrollTrigger: {
-        trigger: ".letra-video-marcas",
+        trigger: ".letra-video",
         start: "top 88%",
         toggleActions: "play reverse play reverse"
       }
