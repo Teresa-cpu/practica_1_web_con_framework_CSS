@@ -94,7 +94,19 @@
     font-family: var(--titulos_tipo);
     font-size: 0.9rem;
     color: var(--Marron_clarito);
+    border-radius: 12px; 
+    border: 1.5px solid var(--Marron_clarito); 
+    font-weight: 500;
+    padding: 0.4rem 1rem;
+    transition: all 0.3s ease;
+    background-color: transparent;
 }
+
+.btn-cards-marca:hover {
+    background-color: var(--Marron_clarito);
+    color: var(--Marron_oscuro);
+    border-color: var(--Marron_clarito);
+  }
 
 .card-body a.btn {
     margin-top: auto;
