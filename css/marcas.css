@@ -62,16 +62,51 @@
 
 .card {
     background-color: var(--Marron_oscuro);
-    border-radius: 5%;
     text-align: center;
     display: flex;
     flex-direction: column;
     height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.4s ease;
+    border-radius: 15px;
+    overflow: hidden;
+
+    /* transicion aparecer */
+    opacity: 0;
+    transform: translateY(40px);
+    /* transition: opacity 0.8s ease, transform 0.8s ease; */
+}
+
+.card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card:hover {
+    /* transform: translateY(-8px); */
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.card img {
+    transition: transform 0.4s ease;
+
+    /* transicion gris  */
+    filter: grayscale(100%);
+  transition: filter 0.5s ease, transform 0.3s ease;
+}
+
+.card:hover img {
+transform: scale(1.05);
+
+/* transicion gris  */
+filter: grayscale(0%);
+transform: scale(1.12);
+
 }
 
 .card-img-top {
     padding: 2rem;
-    border-radius: 15%;
+    border-radius: 20%;
 }
 
 .card-body{
@@ -88,27 +123,85 @@
     color: var(--Marron_clarito);
     padding-bottom: 1.5rem;
     text-align: center;
+
+    opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-.btn-cards-marca {
-    font-family: var(--titulos_tipo);
-    font-size: 0.9rem;
-    color: var(--Marron_clarito);
-    border-radius: 12px; 
-    border: 1.5px solid var(--Marron_clarito); 
-    font-weight: 500;
-    padding: 0.4rem 1rem;
-    transition: all 0.3s ease;
-    background-color: transparent;
-}
+.card.visible .card-title {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.2s;
+  }
 
-.btn-cards-marca:hover {
-    background-color: var(--Marron_clarito);
-    color: var(--Marron_oscuro);
-    border-color: var(--Marron_clarito);
+  .card .btn-cards-marca {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  
+  .card.visible .btn-cards-marca {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.4s;
   }
 
 .card-body a.btn {
     margin-top: auto;
     align-self: center; 
+}
+
+.btn-cards-marca {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    z-index: 1;
+    font-family: var(--titulos_tipo);
+    font-size: 0.9rem;
+    color: var(--Marron_clarito);
+    border-radius: 12px;
+    border: 1.5px solid var(--Marron_clarito);
+    font-weight: 500;
+    padding: 0.4rem 1rem;
+    background: transparent !important; 
+    transition: color 0.25s ease, transform 0.18s ease, border-color 0.18s ease;
+    -webkit-font-smoothing: antialiased;
+    isolation: isolate;
   }
+
+
+.btn-cards-marca::before {
+    content: "";
+    position: absolute;
+    inset: 0;                        
+    background: var(--Marron_clarito);
+    transform: translateX(-110%);   
+    transition: transform 0.9s cubic-bezier(.22,.9,.2,1), opacity 0.25s ease;
+    z-index: -1;              
+    pointer-events: none;        
+}
+
+.btn-cards-marca > * {
+    position: relative;
+    z-index: 1;
+}
+
+.btn-cards-marca:hover {
+    color: var(--Marron_oscuro);
+    transform: scale(1.05);
+    border-color: var(--Marron_clarito);
+}
+
+.btn-cards-marca:hover::before {
+    transform: translateX(0);
+}
+
+.btn-cards-marca:focus::before,
+.btn-cards-marca:focus {
+  transform: none;
+  outline: none;
+  color: var(--Marron_oscuro);
+}
+
+
