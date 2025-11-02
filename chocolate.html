@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+      <!-- ----------- BOOSTRAP DESDE UN CDN ----------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- ----------- PROPIO CSS ----------- -->
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/homepage.css">
+     <link rel="stylesheet" href="css/marcas.css">
+     <link rel="stylesheet" href="css/chocolate.css">
+    <!-- FONT AWESOME  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+
+  <body>
+  <!-- MENU  -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="media/img/Nestlé.png" alt="logo nestle" class="logo_nestle">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">NESTLÉ</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" >
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sobre Nestlé</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Marcas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sostenibilidad</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Nutrición</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- HOMEPAGE VIDEO -->
+        
+<div class="contenedor-video">
+    <video autoplay muted loop id="video-fondo">
+        <source src="media/video/video_home.mp4" type="video/mp4">
+    </video>
+    <div class="letra-video">
+        <h1>CHOCOLATE</h1>
+        <p id="texto-pequeño-video">El cacao con el que elaboramos los chocolates contiene antioxidantes. Un consumo moderado de chocolate tiene cabida dentro de una alimentación variada, equilibrada y de un estilo de vida saludable, ya que es un alimento muy energético por su contenido en hidratos de carbono y grasas.</p>
+    </div>
+</div>
+
+     
+<section class="hero-section-choco d-flex align-items-center">
+  <div class="container text-light">
+    <div class="row align-items-center">
+      <div class="col-lg-6 col-md-12 text-section">
+        <h1 class="fw-bold mb-3">DELEITAMOS TU PALADAR</h1>
+        <p>
+            Nestlé fue pionera en el desarrollo del chocolate con leche cuando, en 1875, Henri Nestlé proporcionó leche concentrada a Daniel Peter, quien creó el primer chocolate con leche comercial del mundo. En 1929, Peter, Cailler y Kohler se unieron al Grupo Nestlé, formando uno de los principales productores de chocolate a nivel global.
+            Hoy, en Nestlé España seguimos esa tradición con marcas tan reconocidas como KitKat, Extrafino, Caja Roja, Nesquik y Crunch. Utilizamos cacao de alta calidad, rico en antioxidantes, y promovemos un consumo moderado dentro de una alimentación equilibrada.
+        </p>
+      </div>
+      <div class="col-lg-6 col-md-12 image-section">
+        <img src="media/img/tarta.jpg" alt="Foto home salud" class="img-fluid rounded-4 shadow-lg">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="marcas-choco">
+    <h1>NUESTRAS MARCAS DE CHOCOLATE</h1>
+    <h3>Haz click en las imágenes para más información.</h3>
+    <div class="img-choco col-md-4">
+        <img src="media/img/caja_roja_choco.avif" class="img-fluid rounded-start" alt="Foto caja roja">
+        <img src="media/img/extra_fino_choco.avif" class="img-fluid rounded-start" alt="Foto extrafino">
+        <img src="media/img/jungly_choco.webp" class="img-fluid rounded-start" alt="Foto jungly">
+        <img src="media/img/kitkat_choco.jpg" class="img-fluid rounded-start" alt="Foto kitkat choco">
+        <img src="media/img/dark_choco.jpeg" class="img-fluid rounded-start" alt="Foto dark">
+        <img src="media/img/postres_choco.webp" class="img-fluid rounded-start" alt="Foto postres">
+    </div>
+</section>
+
+<section class="hero-section-choco-sost d-flex align-items-center">
+  <div class="container text-light">
+    <div class="row align-items-center flex-row-reverse">
+      <div class="col-lg-6 col-md-12 text-section">
+        <h1 class="fw-bold mb-3">CACAO SOSTENIBLE</h1>
+        <p>
+          En Nestlé impulsamos el Nestlé Cocoa Plan para lograr una agricultura más sostenible, mejorar la vida de los agricultores y obtener cacao de mayor calidad. Ofrecemos formación y desarrollamos plantas más resistentes y productivas. Nuestro objetivo es que, para 2025, todo nuestro cacao provenga de este plan.
+          <br><br>
+          Además, con el Income Accelerator Program apoyamos a las familias productoras mediante incentivos económicos por acciones positivas como la escolarización infantil, las buenas prácticas agrícolas y la reforestación. En 2022 beneficiamos a 10.000 familias en Costa de Marfil y, tras su expansión a Ghana en 2024, prevemos incluir a todas las familias de nuestra cadena de suministro para 2030.
+        </p>
+      </div>
+
+      <div class="col-lg-6 col-md-12 image-section">
+        <img src="media/img/cacao2.webp" alt="Foto home salud" class="img-fluid rounded-4 shadow-lg">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<!-- JAVASCRIPT LENIS -->
+  <script src="https://unpkg.com/lenis@1.3.13/dist/lenis.min.js"></script> 
+
+<!-- JAVASCRIPT BOOTSTRAP  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+<!-- JAVASCRIPT: JQUERY -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- GSAP + ScrollTrigger (CDN) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>   
+
+<!-- MY JS SCRIPT  -->
+  <script src="js/script.js"></script>
+  <script src="js/marcas.js"></script>
+    
+  
+  </body>
+</html>

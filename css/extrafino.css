@@ -1,1 +1,15 @@
 /* _________ EXTRAFINO _________ */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Bebas+Neue&family=League+Gothic&family=Raleway:ital,wght@0,100..900;1,100..900&family=Yaldevi:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yaldevi:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --Marron_clarito: #FEFFF1;
+    --Marron_oscuro: #4C3E30;
+    --titulos_tipo: 'Bebas Neue';
+    --menu_tipo: 'Yaldevi';
+    --texto_tipo: 'Roboto';
+    --rojo_oscuro: #520100;
+}
