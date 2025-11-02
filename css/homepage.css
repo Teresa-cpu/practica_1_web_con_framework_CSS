@@ -95,12 +95,6 @@
 
 
 
-
-
-
-
-
-
 /* ______ BOTONES ______ */
 
 .btn-cards-home {
@@ -153,6 +147,68 @@
   transform: none;
   outline: none;
   color: var(--Marron_clarito);
+}
+
+
+
+
+/* ______APARTADO DE ALIMENTACIÓN SALUDABLE______ */
+
+
+.hero-section {
+  background-color: var(--Marron_oscuro); 
+  min-height: 74vh; 
+  color: var(--Marron_clarito);
+  display: flex;
+  align-items: center;
+}
+
+.hero-section .text-section {
+  /* padding: 2rem; */
+  text-align: justify;
+}
+
+.hero-section h1 {
+  font-size: 2rem;
+  padding-right: 8rem;
+}
+
+.hero-section p {
+  font-size: 1rem;
+  text-align: justify;
+  padding-right: 8rem;
+} 
+
+
+.hero-section img {
+  width: 100%;
+  height: auto;
+  border-radius: 2rem;
+  object-fit: cover;
+}
+
+
+
+
+/* ______ APARTADO DE NUESTRAS MARCAS ______ */
+
+.carrousel-container-infinito {
+  padding: 5rem;
+}
+
+.carrousel-track-infinito {
+  display: flex;
+  width: max-content;
+  animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50);
+  }
 }
 
 
