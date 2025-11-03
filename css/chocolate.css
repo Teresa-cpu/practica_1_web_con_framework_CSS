@@ -61,14 +61,18 @@
 /* ______ APARTADO MARCAS CHOCO ______ */
 
 .img-choco {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  row-gap: 2rem;
+  justify-content: center;
+}
+
+.img-choco a {
+  text-decoration: none;
+  display: inline-block;
 }
 
 .marcas-choco {
   text-align: center;
-  padding: 12rem 2rem;
+  padding: 8rem 2rem;
   background-color: var(--Marron_oscuro);
   color: var(--Marron_clarito);
 }
@@ -95,11 +99,11 @@
 }
 
 .marcas-choco img {
-  width: 200px;
+  width: 100%;
   height: 200px;
   object-fit: cover;
   border-radius: 1.5rem;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
   cursor: pointer;
 }
 
@@ -107,14 +111,66 @@
   transform: scale(1.05);
 }
 
-.img-choco a {
-  text-decoration: none;
-  display: inline-block;
-}
 
 .marcas-choco a:hover img {
-  transform: scale(1.05);
+  transform: scale(1.07);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  filter: brightness(1.1) contrast(1.05);
 }
+
+.btn-chocolate {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  z-index: 1;
+  font-family: var(--titulos_tipo);
+  font-size: 0.9rem;
+  color: var(--Marron_clarito);
+  border-radius: 12px;
+  border: 1.5px solid var(--Marron_clarito);
+  font-weight: 500;
+  padding: 0.4rem 1rem;
+  background: transparent !important; 
+  transition: color 0.25s ease, transform 0.18s ease, border-color 0.18s ease;
+  -webkit-font-smoothing: antialiased;
+  isolation: isolate;
+  margin-top: 4rem;
+}
+
+
+.btn-chocolate::before {
+  content: "";
+  position: absolute;
+  inset: 0;                        
+  background: var(--Marron_clarito);
+  transform: translateX(-110%);   
+  transition: transform 0.9s cubic-bezier(.22,.9,.2,1), opacity 0.25s ease;
+  z-index: -1;              
+  pointer-events: none;        
+}
+
+.btn-chocolate > * {
+  position: relative;
+  z-index: 1;
+}
+
+.btn-chocolate:hover {
+  color: var(--Marron_oscuro);
+  transform: scale(1.05);
+  border-color: var(--Marron_clarito);
+}
+
+.btn-chocolate:hover::before {
+  transform: translateX(0);
+}
+
+.btn-chocolate:focus::before,
+.btn-chocolate:focus {
+transform: none;
+outline: none;
+color: var(--Marron_oscuro);
+}
+
 
 
 
