@@ -88,9 +88,9 @@
 
 .marcas-choco .col-md-4 {
   display: flex;
-  justify-content: space-around;  
+  justify-content: center;  
   align-items: center;      
-  flex-wrap: nowrap;         
+  flex-wrap: wrap;         
   gap: 1.5rem;              
 }
 
@@ -106,6 +106,16 @@
 .marcas-choco img:hover {
   transform: scale(1.05);
 }
+
+.img-choco a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.marcas-choco a:hover img {
+  transform: scale(1.05);
+}
+
 
 
 /* ______ APARTADO CACAO SOSTENIBLE ______ */
