@@ -96,4 +96,75 @@ gsap.utils.toArray(".img-choco a").forEach((el, i) => {
       start: "top 85%"
     }
   });
-  
+
+
+
+// ANIMACION APARTADO "DELEITAMOS TU PALADAR" 
+
+gsap.from(".hero-section-choco .text-section", {
+  scrollTrigger: {
+    trigger: ".hero-section-choco",
+    start: "top 80%",
+  },
+  x: -80,
+  opacity: 0,
+  duration: 1,
+  ease: "power3.out"
+});
+
+gsap.from(".hero-section-choco .image-section", {
+  scrollTrigger: {
+    trigger: ".hero-section-choco",
+    start: "top 80%",
+  },
+  x: 80,
+  opacity: 0,
+  duration: 1,
+  ease: "power3.out",
+  delay: 0.3
+});
+
+
+// ======== BOTÓN "VER MÁS" ======== //
+gsap.from(".btn-chocolate", {
+  scrollTrigger: {
+    trigger: ".btn-chocolate",
+    start: "top 90%",
+  },
+  scale: 0.7,
+  opacity: 0,
+  ease: "back.out(1.7)",
+  duration: 1
+});
+
+
+// ======== APARTADO CACAO SOSTENIBLE ======== //
+gsap.from(".hero-section-choco-sost .text-section", {
+  scrollTrigger: {
+    trigger: ".hero-section-choco-sost",
+    start: "top 80%",
+  },
+  x: 80,
+  opacity: 0,
+  duration: 1,
+  ease: "power3.out"
+});
+
+gsap.from(".hero-section-choco-sost .image-section", {
+  scrollTrigger: {
+    trigger: ".hero-section-choco-sost",
+    start: "top 80%",
+  },
+  x: -80,
+  opacity: 0,
+  duration: 1,
+  ease: "power3.out",
+  delay: 0.3
+});
+
+
+
+
+
+
+

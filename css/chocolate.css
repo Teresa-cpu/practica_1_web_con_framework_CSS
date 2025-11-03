@@ -108,7 +108,10 @@
 }
 
 .marcas-choco img:hover {
-  transform: scale(1.05);
+  /* transform: scale(1.05); */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  transform: scale(1.08);
+  filter: brightness(1.1) contrast(1.05);
 }
 
 
@@ -158,6 +161,7 @@
   color: var(--Marron_oscuro);
   transform: scale(1.05);
   border-color: var(--Marron_clarito);
+  transform: scale(1.1) translateY(-2px);
 }
 
 .btn-chocolate:hover::before {
