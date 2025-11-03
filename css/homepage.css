@@ -17,18 +17,6 @@
 /* TARJETAS */
 
 .tarjetas-home {
-    /* padding-top: 6rem;
-    padding-bottom: 6rem;
-    padding-left: 5rem; */
-    /* display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: var(--Marron_clarito);
-    border-top: 1px solid var(--Marron_oscuro);
-    border-bottom: 1px solid var(--Marron_oscuro); */
     padding: 3rem 0;
 }
 
@@ -38,7 +26,7 @@
   /* padding-left: 2rem;
   padding-right: 2rem; */
   background-color: var(--Marron_clarito);
-  border: 2px solid var(--Marron_oscuro);
+  border: 1.5px solid var(--Marron_oscuro);
   border-radius: 20px;
   transition: all 0.4s ease;
   overflow: hidden;
@@ -46,11 +34,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.card-home:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transform: scale(0.9);
 }
 
 .card-home img{
@@ -69,7 +53,7 @@
 
 .card-title-home {
     padding-top: 2rem;
-    font-style: var(--rojo_oscuro);
+    color: var(--rojo_oscuro);
     font-family: var(--titulos_tipo);
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
@@ -87,7 +71,8 @@
   transition: all 0.3s ease;
 }
 
-.perfil-card-home:hover {
+.card-home:hover
+.perfil-card-home:hover{
   transform: translateY(-6px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }

@@ -1,18 +1,18 @@
 // APARICION POR FILAS 
-$(window).on('scroll', function() {
-  $('.card-home').each(function() {
-    const cardTop = $(this).offset().top;
-    const cardBottom = cardTop + $(this).outerHeight();
-    const scrollTop = $(window).scrollTop();
-    const windowHeight = $(window).height();
+// $(window).on('scroll', function() {
+//   $('.card-home').each(function() {
+//     const cardTop = $(this).offset().top;
+//     const cardBottom = cardTop + $(this).outerHeight();
+//     const scrollTop = $(window).scrollTop();
+//     const windowHeight = $(window).height();
 
-    if (cardTop < scrollTop + windowHeight - 100 && cardBottom > scrollTop + 100) {
-      $(this).addClass('visible');
-    } else {
-      $(this).removeClass('visible');
-    }
-  });
-});
+//     if (cardTop < scrollTop + windowHeight - 100 && cardBottom > scrollTop + 100) {
+//       $(this).addClass('visible');
+//     } else {
+//       $(this).removeClass('visible');
+//     }
+//   });
+// });
 
 
 //   ANIMACION TITULOS HEADER 
@@ -86,31 +86,49 @@ document.addEventListener('DOMContentLoaded', function() {
   
 // ANIMACION FUTURO SALUDABLE 
 
-gsap.from(".hero-section .text-section", {
+// gsap.from(".hero-section .text-section", {
+//     scrollTrigger: {
+//       trigger: ".hero-section",
+//       start: "top 85%",
+//       toggleActions: "play none none reverse"
+//     },
+//     x: -80,
+//     opacity: 0,
+//     duration: 1,
+//     ease: "power3.out"
+//   });
+  
+//   gsap.from(".hero-section .image-section", {
+//     scrollTrigger: {
+//       trigger: ".hero-section",
+//       start: "top 85%",
+//       toggleActions: "play none none reverse"
+//     },
+//     x: 80,
+//     opacity: 0,
+//     duration: 1,
+//     ease: "power3.out",
+//     delay: 0.3
+//   });
+  
+// APARICION TEXTO E IMAGENES EN TRAJETAS
+
+  const cards = gsap.utils.toArray(".card-home");
+
+cards.forEach(card => {
+  const img = card.querySelector("img");
+  const body = card.querySelector(".card-body-home");
+
+  gsap.timeline({
     scrollTrigger: {
-      trigger: ".hero-section",
+      trigger: card,
       start: "top 85%",
       toggleActions: "play none none reverse"
-    },
-    x: -80,
-    opacity: 0,
-    duration: 1,
-    ease: "power3.out"
-  });
-  
-  gsap.from(".hero-section .image-section", {
-    scrollTrigger: {
-      trigger: ".hero-section",
-      start: "top 85%",
-      toggleActions: "play none none reverse"
-    },
-    x: 80,
-    opacity: 0,
-    duration: 1,
-    ease: "power3.out",
-    delay: 0.3
-  });
-  
+    }
+  })
+  .from(img, {x: -40, opacity: 0, duration: 0.8, ease: "power3.out"})
+  .from(body, {x: 40, opacity: 0, duration: 0.8, ease: "power3.out"}, "-=0.5");
+});
 
   
 // LOGOS
@@ -131,3 +149,45 @@ logos.forEach(logo => {
     gsap.to(logo, { scale: 1, duration: 0.3, ease: "power2.inOut" });
   });
 });
+
+
+// Inicializa Lenis
+const lenis = new Lenis({
+  duration: 1.2,
+  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+  smooth: true
+});
+
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+requestAnimationFrame(raf);
+
+// Sincroniza con ScrollTrigger
+lenis.on('scroll', ScrollTrigger.update);
+
+gsap.from(".text-section", {
+  scrollTrigger: {
+    trigger: ".hero-section",
+    start: "top 80%",
+  },
+  y: 100,
+  opacity: 0,
+  duration: 1.2,
+  ease: "power3.out"
+});
+
+gsap.from(".image-section img", {
+  scrollTrigger: {
+    trigger: ".hero-section",
+    start: "top 70%",
+  },
+  scale: 1.2,
+  opacity: 0,
+  duration: 1.5,
+  ease: "power2.out"
+});
+
+
+
