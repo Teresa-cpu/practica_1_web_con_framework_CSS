@@ -13,3 +13,43 @@
     --texto_tipo: 'Roboto';
     --rojo_oscuro: #520100;
 }
+
+/* ______ TARJETAS DE LOS CHOCOLATES _____ */
+
+.extrafino-elegir {
+    background-color: var(--Marron_oscuro);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+/* TITULO Y TEXTO */
+
+.extrafino-elegir h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-family: var(--titulos_tipo);
+}
+
+/* HOVER CHOCOLATES */
+
+.extrafino-elegir img {
+  object-fit: cover;
+  border-radius: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+}
+
+.extrafino-elegir img:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  transform: scale(1.08);
+  filter: brightness(1.1) contrast(1.05);
+}
+
+
+.extrafino-elegir a:hover img {
+  transform: scale(1.07);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  filter: brightness(1.1) contrast(1.05);
+}
