@@ -15,7 +15,7 @@
 
 /* TARJETAS  */
 
-#tarjetas {
+#tarjetas-marcas {
     padding-top: 20vh;
     /* padding-top: 115vh; */
     /* padding-left: 2rem;
@@ -24,7 +24,7 @@
     transform-origin: top center; 
 }
 
-.card {
+.card-marcas {
     background-color: var(--Marron_oscuro);
     text-align: center;
     display: flex;
@@ -39,18 +39,18 @@
     transform: translateY(40px);
 }
 
-.card.visible {
+.card-marcas.visible {
     opacity: 1;
     transform: translateY(0);
 }
 
-.card:hover {
+.card-marcas:hover {
     /* transform: translateY(-8px); */
     transform: translateY(-8px) scale(1.03);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
-.card img {
+.card-marcas img {
     transition: transform 0.4s ease;
 
     /* transicion gris  */
@@ -58,7 +58,7 @@
   transition: filter 0.5s ease, transform 0.3s ease;
 }
 
-.card:hover img {
+.card-marcas:hover img {
 transform: scale(1.05);
 
 /* transicion gris  */
@@ -67,12 +67,12 @@ transform: scale(1.12);
 
 }
 
-.card-img-top {
+.card-img-top-marcas {
     padding: 2rem;
     border-radius: 20%;
 }
 
-.card-body{
+.card-body-marcas{
     padding-bottom: 5rem;
     display: flex;
     flex-direction: column;
@@ -80,7 +80,7 @@ transform: scale(1.12);
     flex-grow: 1;
 }
 
-.card-title {
+.card-title-marcas {
     font-family: var(--titulos_tipo);
     font-size: 2.7rem;
     color: var(--Marron_clarito);
@@ -92,25 +92,25 @@ transform: scale(1.12);
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-.card.visible .card-title {
+.card-marcas.visible .card-title-marcas {
     opacity: 1;
     transform: translateY(0);
     transition-delay: 0.2s;
   }
 
-  .card .btn-cards-marca {
+  .card-marcas .btn-cards-marca {
     opacity: 0;
     transform: translateY(10px);
     transition: opacity 0.6s ease, transform 0.6s ease;
   }
   
-  .card.visible .btn-cards-marca {
+  .card-marcas.visible .btn-cards-marca {
     opacity: 1;
     transform: translateY(0);
     transition-delay: 0.4s;
   }
 
-.card-body a.btn {
+.card-body-marcas a.btn {
     margin-top: auto;
     align-self: center; 
 }

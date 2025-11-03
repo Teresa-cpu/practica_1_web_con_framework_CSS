@@ -1,20 +1,19 @@
-// APARICION POR FILAS 
+// APARICIÓN POR FILAS - versión adaptada al HTML
 $(window).on('scroll', function() {
-    $('.card').each(function() {
-      const cardTop = $(this).offset().top;
-      const cardBottom = cardTop + $(this).outerHeight();
-      const scrollTop = $(window).scrollTop();
-      const windowHeight = $(window).height();
-  
-      // entra cuando su parte superior está dentro del viewport
-      if (cardTop < scrollTop + windowHeight - 100 && cardBottom > scrollTop + 100) {
-        $(this).addClass('visible');
-      } else {
-        $(this).removeClass('visible');
-      }
-    });
+  $('.card-marcas').each(function() {
+    const cardTop = $(this).offset().top;
+    const cardBottom = cardTop + $(this).outerHeight();
+    const scrollTop = $(window).scrollTop();
+    const windowHeight = $(window).height();
+
+    // Aparece cuando su parte superior entra en el viewport
+    if (cardTop < scrollTop + windowHeight - 100 && cardBottom > scrollTop + 100) {
+      $(this).addClass('visible');
+    } else {
+      $(this).removeClass('visible');
+    }
   });
-  
+});
 
 
 //   ANIMACION TITULOS HEADER 
