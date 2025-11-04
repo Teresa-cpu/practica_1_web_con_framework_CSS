@@ -369,14 +369,5 @@
 
 
 
-/* ______ FOOTER ______ */
-
-.footer-home {
-  background-color: var(--Marron_oscuro); 
-  min-height: 34vh; 
-  color: var(--Marron_clarito);
-  display: flex;
-  align-items: center;
-}
 
 

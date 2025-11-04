@@ -134,7 +134,15 @@ body {
     font-family: var(--texto_tipo);
 }
 
+/* ______ FOOTER GENERAL ______ */
 
+.footer-general {
+  background-color: var(--Marron_oscuro); 
+  min-height: 34vh; 
+  color: var(--Marron_clarito);
+  display: flex;
+  align-items: center;
+}
 
 
 

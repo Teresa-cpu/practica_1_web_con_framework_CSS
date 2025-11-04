@@ -6,30 +6,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
-    --Marron_clarito: #FEFFF1;
-    --Marron_oscuro: #4C3E30;
-    --titulos_tipo: 'Bebas Neue';
-    --menu_tipo: 'Yaldevi';
-    --texto_tipo: 'Roboto';
-    --rojo_oscuro: #520100;
+  --Marron_clarito: #FEFFF1;
+  --Marron_oscuro: #4C3E30;
+  --titulos_tipo: 'Bebas Neue';
+  --menu_tipo: 'Yaldevi';
+  --texto_tipo: 'Roboto';
+  --rojo_oscuro: #520100;
 }
 
 /* ______ TARJETAS DE LOS CHOCOLATES _____ */
 
 .extrafino-elegir {
-    background-color: var(--Marron_oscuro);
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+  background-color: var(--Marron_oscuro);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 /* TITULO Y TEXTO */
 
 .extrafino-elegir h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2.5rem;
-    font-family: var(--titulos_tipo);
+  font-size: 4rem;
+  font-family: var(--titulos_tipo);
+  color: var(--Marron_clarito);
+  letter-spacing: 0.15rem;
+  margin-bottom: 1rem;
+}
+
+.extrafino-elegir p {
+  color: var(--Marron_clarito);
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 5rem;
 }
 
 /* HOVER CHOCOLATES */
@@ -53,3 +60,76 @@
   box-shadow: 0 8px 25px rgba(0,0,0,0.3);
   filter: brightness(1.1) contrast(1.05);
 }
+
+/* ______ APARTADO APETECER ALGO MÁS ______ */
+
+.extrafino-apetecer {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.extrafino-apetecer h1 {
+  font-family: var(--titulos_tipo);
+  color: var(--rojo_oscuro);
+  font-size: 4rem;
+  padding-bottom: 5rem;
+}
+
+
+/* ______ BOTONES EXTRAFINO ______ */
+
+.btn-cards-extrafino {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    z-index: 1;
+    font-family: var(--titulos_tipo);
+    font-size: 1.3rem;
+    color: var(--Marron_oscuro);
+    border-radius: 12px;
+    border: 1.5px solid var(--Marron_oscuro);
+    font-weight: 500;
+    padding: 0.4rem 1rem;
+    background: transparent !important; 
+    transition: color 0.25s ease, transform 0.18s ease, border-color 0.18s ease;
+    -webkit-font-smoothing: antialiased;
+    isolation: isolate;
+  
+  }
+
+
+.btn-cards-extrafino::before {
+    content: "";
+    position: absolute;
+    inset: 0;                        
+    background: var(--Marron_oscuro);
+    transform: translateX(-110%);   
+    transition: transform 0.9s cubic-bezier(.22,.9,.2,1), opacity 0.25s ease;
+    z-index: -1;              
+    pointer-events: none;        
+}
+
+.btn-cards-extrafino > * {
+    position: relative;
+    z-index: 1;
+}
+
+.btn-cards-extrafino:hover {
+    color: var(--Marron_clarito);
+    transform: scale(1.05);
+    border-color: var(--Marron_oscuro);
+}
+
+.btn-cards-extrafino:hover::before {
+    transform: translateX(0);
+}
+
+.btn-cards-extrafino:focus::before,
+.btn-cards-extrafino:focus {
+  transform: none;
+  outline: none;
+  color: var(--Marron_clarito);
+}
+
+
+
