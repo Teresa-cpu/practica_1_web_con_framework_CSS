@@ -142,6 +142,26 @@ body {
   color: var(--Marron_clarito);
   display: flex;
   align-items: center;
+  border-top-left-radius: 2rem;
+}
+
+.footer-row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.footer-col {
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.footer-logo {
+    width: 85%;
+    margin-bottom: 30px;
 }
 
 
