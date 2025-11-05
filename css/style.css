@@ -136,7 +136,7 @@ body {
 
 /* ______ FOOTER GENERAL ______ */
 
-.footer-general {
+/* .footer-general {
   background-color: var(--Marron_oscuro); 
   min-height: 34vh; 
   color: var(--Marron_clarito);
@@ -163,6 +163,111 @@ body {
     width: 85%;
     margin-bottom: 30px;
 }
+
+.footer-col h3 {
+    width: fit-content;
+    margin-bottom: 40px;
+}
+
+.footer-email-id {
+    width: fit-content;
+    border-bottom: 1px solid #520100;
+    margin: 20px 0;
+}
+
+.footer-ul li {
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+.footer-ul li a {
+    text-decoration: none;
+    color: var(--Marron_clarito);
+}
+
+.footer-form {
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #FEFFF1;
+    margin-bottom: 50px;
+}
+
+.footer-form .fas {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.footer-form input {
+    width: 100%;
+    background: transparent;
+    color: var(--Marron_clarito);
+    border: 0;
+    outline: none;
+}
+
+.footer-form button {
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.footer-form button .fas {
+    font-size: 16px;
+    color: var(--Marron_clarito);
+}
+
+.footer-rrss .fab {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: var(--Marron_clarito);
+    background: var(--Marron_clarito);
+    margin-right: 15px;
+    cursor: pointer;
+} */
+
+.footer-general {
+  background-color: var(--Marron_oscuro);
+  color: var(--Marron_clarito);
+  border-top-left-radius: 2rem;
+}
+
+.footer-logo {
+  width: 85%;
+}
+
+.footer-title {
+  font-family: 'Bebas Neue', sans-serif;
+  margin-bottom: 1.5rem;
+}
+
+.footer-link {
+  color: var(--Marron_clarito);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: var(--rojo_oscuro);
+}
+
+.footer-form {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--Marron_clarito);
+  padding-bottom: 0.5rem;
+}
+
+
+
+
+
 
 
 
@@ -207,3 +312,32 @@ body {
 
 
 
+
+
+
+
+
+
+/* _________ MEDIA QUERY HOME _________ */
+
+
+
+/* _________ MEDIA QUERY MARCAS _________ */
+
+
+
+/* _________ MEDIA QUERY CHOCOLATE _________ */
+
+
+
+/* _________ MEDIA QUERY EXTRAFINO _________ */
+
+
+
+/* _________ MEDIA QUERY FOOTER _________ */
+
+/* @media (max-width: 700px) {
+    .footer-general {
+        bottom: unset;
+    }
+} */
