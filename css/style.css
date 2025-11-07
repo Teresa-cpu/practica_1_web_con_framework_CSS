@@ -235,7 +235,8 @@ body {
 .footer-general {
   background-color: var(--Marron_oscuro);
   color: var(--Marron_clarito);
-  border-top-left-radius: 2rem;
+  border-top-left-radius: 2rem; 
+  font-family: var(--texto_tipo);
 }
 
 .footer-logo {
@@ -243,7 +244,7 @@ body {
 }
 
 .footer-title {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: var(--titulos_tipo);
   margin-bottom: 1.5rem;
 }
 
