@@ -47,7 +47,6 @@ document.addEventListener('DOMContentLoaded', function() {
   
     // FORZAR refresh cuando todo cargue
     function refreshAfterLoad() {
-      // espera un tick y fuerza el refresh
       requestAnimationFrame(() => {
         ScrollTrigger.refresh();
         console.log('ScrollTrigger refresh ejecutado');
@@ -67,3 +66,133 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
   
+
+// LENIS + SCROLLTRIGGER
+const lenis = new Lenis({
+  duration: 1.2, 
+  smooth: true,
+  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+});
+
+function raf(time) {
+  lenis.raf(time);
+  ScrollTrigger.update();
+  requestAnimationFrame(raf);
+}
+requestAnimationFrame(raf);
+
+// ANIMACIÓN HERO EXTRAFINO
+gsap.from(".hero-section-choco .text-section", {
+  scrollTrigger: {
+    trigger: ".hero-section-choco",
+    start: "top 80%",
+  },
+  x: 80,
+  opacity: 0,
+  duration: 1,
+  ease: "power3.out"
+});
+
+gsap.from(".hero-section-choco .image-section", {
+  scrollTrigger: {
+    trigger: ".hero-section-choco",
+    start: "top 80%",
+  },
+  x: -80,
+  opacity: 0,
+  duration: 1,
+  ease: "power3.out",
+  delay: 0.3
+});
+
+
+// extrafino fav
+gsap.from(".extrafino-elegir h1", {
+  y: 80,
+  opacity: 0,
+  duration: 1,
+  ease: "power3.out",
+  scrollTrigger: {
+    trigger: ".extrafino-elegir",
+    start: "top 80%",
+    toggleActions: "play none none reverse",
+  },
+});
+
+gsap.from(".extrafino-elegir p", {
+  y: 40,
+  opacity: 0,
+  duration: 0.8,
+  delay: 0.2,
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: ".extrafino-elegir",
+    start: "top 75%",
+    toggleActions: "play none none reverse",
+  },
+});
+
+// ANIMACION TABLETAS CHOCO
+gsap.from(".extrafino-elegir img", {
+  scrollTrigger: {
+    trigger: ".extrafino-elegir",
+    start: "top 85%",
+    toggleActions: "play none none reverse",
+  },
+  opacity: 0,
+  scale: 0.9,
+  duration: 1.4,
+  ease: "power2.out",
+  stagger: {
+    each: 0.15,
+    from: "left"
+  }
+});
+
+
+// Animación sección "¿TE APETECE ALGO MÁS?"
+gsap.from(".extrafino-apetecer h1", {
+  scrollTrigger: {
+    trigger: ".extrafino-apetecer",
+    start: "center bottom",   
+    end: "bottom top",
+    toggleActions: "play none none reverse",
+    once: true               
+  },
+  y: 80,
+  opacity: 0,
+  duration: 1.2,
+  ease: "power3.out"
+});
+
+// Botón izquierdo (MARCAS)
+gsap.from(".extrafino-apetecer .btn-cards-extrafino:first-child", {
+  scrollTrigger: {
+    trigger: ".extrafino-apetecer",
+    start: "center bottom",
+    end: "bottom top",
+    toggleActions: "play none none reverse",
+    once: true
+  },
+  x: -120,
+  opacity: 0,
+  duration: 1.2,
+  ease: "power2.out",
+  delay: 0.3
+});
+
+// Botón derecho (CHOCOLATES)
+gsap.from(".extrafino-apetecer .btn-cards-extrafino:last-child", {
+  scrollTrigger: {
+    trigger: ".extrafino-apetecer",
+    start: "center bottom",
+    end: "bottom top",
+    toggleActions: "play none none reverse",
+    once: true
+  },
+  x: 120,
+  opacity: 0,
+  duration: 1.2,
+  ease: "power2.out",
+  delay: 0.5
+});
