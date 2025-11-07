@@ -9,6 +9,7 @@
     --menu_tipo: 'Yaldevi';
     --texto_tipo: 'Roboto';
     --rojo_oscuro: #520100;
+    --sombreado_hover: #bfc0b4;
 }
 
 body {
@@ -233,41 +234,69 @@ body {
 } */
 
 .footer-general {
-  background-color: var(--Marron_oscuro);
-  color: var(--Marron_clarito);
-  border-top-left-radius: 2rem; 
-  font-family: var(--texto_tipo);
+    background-color: var(--Marron_oscuro);
+    color: var(--Marron_clarito);
+    border-top-left-radius: 2rem; 
+    font-family: var(--texto_tipo);
 }
 
 .footer-logo {
-  width: 85%;
+    width: 30%;
 }
 
 .footer-title {
-  font-family: var(--titulos_tipo);
-  margin-bottom: 1.5rem;
+    font-family: var(--titulos_tipo);
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+}
+
+.footer-p {
+    font-size: 0.8rem;
+}
+
+.footer-email:hover {
+    color: var(--sombreado_hover);
+    text-decoration: none;
+    transition: color 0.2s ease;
+    cursor: pointer;
 }
 
 .footer-link {
-  color: var(--Marron_clarito);
-  text-decoration: none;
-  transition: color 0.2s ease;
+    color: var(--Marron_clarito);
+    text-decoration: none;
+    transition: color 0.2s ease;
 }
 
 .footer-link:hover {
-  color: var(--rojo_oscuro);
+    color: var(--sombreado_hover);
 }
 
 .footer-form {
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid var(--Marron_clarito);
-  padding-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--Marron_clarito);
+    padding-bottom: 0.5rem;
+}
+
+.footer-form button i:hover {
+    color: var(--sombreado_hover);
+    transition: color 0.2s ease;
 }
 
 .footer-form .form-control::placeholder{
     color: var(--Marron_clarito);
-    font-size: 0.9rem;
+    font-size: 0.75rem;
+}
+
+.footer-rrss a i{
+    color: var(--Marron_clarito);
+}
+
+.footer-rrss a i:hover {
+    color: var(--sombreado_hover);
+    /* font-size: 2rem; */
+    cursor: pointer;
+    transition: color 0.2s ease;
 }
 
 

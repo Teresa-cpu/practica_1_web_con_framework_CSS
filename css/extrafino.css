@@ -11,7 +11,8 @@
   --titulos_tipo: 'Bebas Neue';
   --menu_tipo: 'Yaldevi';
   --texto_tipo: 'Roboto';
-  --rojo_oscuro: #520100;
+  --rojo_oscuro: #520100;    
+  --sombreado_hover: #bfc0b4;
 }
 
 /* ______ TARJETAS DE LOS CHOCOLATES _____ */
@@ -72,7 +73,7 @@
   font-family: var(--titulos_tipo);
   color: var(--rojo_oscuro);
   font-size: 4rem;
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
 }
 
 
