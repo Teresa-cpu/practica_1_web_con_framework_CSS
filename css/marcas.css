@@ -19,9 +19,6 @@
 
 #tarjetas-marcas {
     padding-top: 20vh;
-    /* padding-top: 115vh; */
-    /* padding-left: 2rem;
-    padding-right: 2rem; */
     transform: scale(0.7); 
     transform-origin: top center; 
 }

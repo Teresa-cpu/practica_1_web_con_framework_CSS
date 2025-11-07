@@ -53,18 +53,19 @@
 }
 
 .card-title-home {
-    padding-top: 2rem;
-    color: var(--rojo_oscuro);
-    font-family: var(--titulos_tipo);
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+  padding-top: 2rem;
+  color: var(--rojo_oscuro);
+  font-family: var(--titulos_tipo);
+  font-size: 1.8rem;
+  padding-bottom: 0.5rem;
 }
 
-.crad-text-home{
+.card-text-home{
   font-family: var(--texto_tipo);
   color: var(--Marron_oscuro);
   line-height: 1.4;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
+  padding-bottom: 0.6rem;
 }
 
 .perfil-card-home {
@@ -322,7 +323,7 @@
     overflow: hidden;
     z-index: 1;
     font-family: var(--titulos_tipo);
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     color: var(--Marron_oscuro);
     border-radius: 12px;
     border: 2.5px solid var(--Marron_oscuro);
