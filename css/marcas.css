@@ -17,18 +17,18 @@
 
 /* TARJETAS  */
 
-#tarjetas-marcas {
+/* #tarjetas-marcas {
     padding-top: 20vh;
     transform: scale(0.7); 
     transform-origin: top center; 
-}
+} */
 
 .card-marcas {
     background-color: var(--Marron_oscuro);
     text-align: center;
     display: flex;
     flex-direction: column;
-    height: 100%;
+    /* height: 100%; */
     transition: transform 0.3s ease, box-shadow 0.4s ease;
     border-radius: 15px;
     overflow: hidden;
@@ -68,11 +68,11 @@ transform: scale(1.12);
 
 .card-img-top-marcas {
     padding: 2rem;
-    border-radius: 20%;
+    border-radius: 40px;
 }
 
 .card-body-marcas{
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -83,11 +83,10 @@ transform: scale(1.12);
     font-family: var(--titulos_tipo);
     font-size: 2.4rem;
     color: var(--Marron_clarito);
-    padding-bottom: 1.5rem;
+    padding-bottom: 1rem;
     text-align: center;
-
-    opacity: 0;
-  transform: translateY(10px);
+    /* opacity: 0;
+  transform: translateY(10px); */
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
@@ -120,16 +119,14 @@ transform: scale(1.12);
     overflow: hidden;
     z-index: 1;
     font-family: var(--titulos_tipo);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: var(--Marron_clarito);
     border-radius: 12px;
     border: 1.5px solid var(--Marron_clarito);
-    font-weight: 500;
-    padding: 0.4rem 1rem;
+    padding: 0.3rem 0.8rem;;
     background: transparent !important; 
     transition: color 0.25s ease, transform 0.18s ease, border-color 0.18s ease;
     -webkit-font-smoothing: antialiased;
-    isolation: isolate;
   }
 
 
