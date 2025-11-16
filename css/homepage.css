@@ -39,18 +39,18 @@
 }
 
 .card-home img{
-  border-radius: 16px;
+  /* border-radius: 16px; */
   width: 100%;
-  height: auto;
-  object-fit: cover;
+  /* height: auto; */
+  /* object-fit: cover; */
   margin: 2rem;
 }
 
-.card-body-home {
+/* .card-body-home {
   padding-left: 3rem;
   padding-right: 1.5rem;
   margin-left: 0.5rem;
-}
+} */
 
 .card-title-home {
   padding-top: 2rem;
