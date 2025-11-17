@@ -211,16 +211,6 @@ transform: scale(1.12);
   .card-img-top-marcas {
     padding: 1.5rem;
   }
-
-  /* desactivar animacion grises */
-   .card-marcas img {
-    filter: grayscale(0%) !important;
-  }
-
-  .card-marcas:hover img {
-    filter: grayscale(0%) !important;
-    transform: scale(1.05); 
-  }
 }
 
 @media (min-width: 576px) and (max-width: 780px) {
@@ -238,7 +228,6 @@ transform: scale(1.12);
     padding: 1.2rem;
   }
 }
-
 
 @media (max-width: 575px) {
   .card-title-marcas {
