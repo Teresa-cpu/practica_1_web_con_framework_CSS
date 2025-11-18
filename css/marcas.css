@@ -230,6 +230,10 @@ transform: scale(1.12);
 }
 
 @media (max-width: 575px) {
+    /* .card-marcas{
+    width: 60vw;
+  } */
+
   .card-title-marcas {
     font-size: 1.4rem;
   }
