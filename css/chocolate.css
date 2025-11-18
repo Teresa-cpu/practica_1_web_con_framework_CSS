@@ -202,3 +202,54 @@ color: var(--Marron_oscuro);
   border-radius: 2rem;
   object-fit: cover;
 }
+
+
+
+/* ______ MEDIA QUERY CHOCOLATE ______ */
+
+/* ______ MEDIA QUERY HOMEPAGE ______ */
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .hero-section-choco .text-section {
+    padding: 0rem;
+  }
+
+  .hero-section-choco .image-section {
+    padding-top: 2rem;
+  }
+
+
+
+
+}
+
+
+
+@media (max-width: 766px) {
+
+  
+
+
+
+}
+
+@media (max-width: 575px) {
+
+
+
+
+
+}
+
+
+@media (max-width: 400px) {
+
+
+
+
+
+
+}
+
