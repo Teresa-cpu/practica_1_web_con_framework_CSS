@@ -22,7 +22,7 @@
   background-color: var(--Marron_clarito);
   min-height: 74vh;
   color: var(--Marron_oscuro);
-  display: block; /* cambia esto */
+  display: block; 
   padding: 4rem 0;
 }
 
@@ -114,13 +114,6 @@
   filter: brightness(1.1) contrast(1.05);
 }
 
-
-/* .marcas-choco a:hover img {
-  transform: scale(1.07);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-  filter: brightness(1.1) contrast(1.05);
-} */
-
 .btn-chocolate {
   position: relative;
   display: inline-block;
@@ -139,7 +132,6 @@
   isolation: isolate;
   margin-top: 4rem;
 }
-
 
 .btn-chocolate::before {
   content: "";
@@ -188,14 +180,14 @@ color: var(--Marron_oscuro);
 }
 
 .hero-section-choco-sost h1 {
-    color: var(--rojo_oscuro);
-    padding-left: 4rem;
+  color: var(--rojo_oscuro);
+  padding-left: 4rem;
 
 }
 
 .hero-section-choco-sost p {
-    color: var(--Marron_oscuro);
-    padding-left: 4rem;
+  color: var(--Marron_oscuro);
+  padding-left: 4rem;
 
 }
 

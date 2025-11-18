@@ -17,143 +17,130 @@
 
 /* TARJETAS  */
 
-/* #tarjetas-marcas {
-    padding-top: 20vh;
-    transform: scale(0.7); 
-    transform-origin: top center; 
-} */
-
 .card-marcas {
-    background-color: var(--Marron_oscuro);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    /* height: 100%; */
-    transition: transform 0.3s ease, box-shadow 0.4s ease;
-    border-radius: 15px;
-    overflow: hidden;
+  background-color: var(--Marron_oscuro);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.4s ease;
+  border-radius: 15px;
+  overflow: hidden;
 
-    /* transicion aparecer */
-    opacity: 0;
-    transform: translateY(40px);
+/* transicion aparecer */
+  opacity: 0;
+  transform: translateY(40px);
 }
 
 .card-marcas.visible {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .card-marcas:hover {
-    /* transform: translateY(-8px); */
-    transform: translateY(-8px) scale(1.03);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
 .card-marcas img {
-    transition: transform 0.4s ease;
+  transition: transform 0.4s ease;
 
-    /* transicion gris  */
-    filter: grayscale(100%);
+/* transicion gris  */
+  filter: grayscale(100%);
   transition: filter 0.5s ease, transform 0.3s ease;
 }
 
 .card-marcas:hover img {
-transform: scale(1.05);
-
-/* transicion gris  */
-filter: grayscale(0%);
-transform: scale(1.12);
-
+  transform: scale(1.05);
+  filter: grayscale(0%);
+  transform: scale(1.12);
 }
 
 .card-img-top-marcas {
-    padding: 2rem;
-    border-radius: 40px;
+  padding: 2rem;
+  border-radius: 40px;
 }
 
 .card-body-marcas{
-    padding-bottom: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-grow: 1;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
 }
 
 .card-title-marcas {
-    font-family: var(--titulos_tipo);
-    font-size: 2.4rem;
-    color: var(--Marron_clarito);
-    padding-bottom: 1rem;
-    text-align: center;
-    /* opacity: 0;
-  transform: translateY(10px); */
+  font-family: var(--titulos_tipo);
+  font-size: 2.4rem;
+  color: var(--Marron_clarito);
+  padding-bottom: 1rem;
+  text-align: center;
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
 .card-marcas.visible .card-title-marcas {
-    opacity: 1;
-    transform: translateY(0);
-    transition-delay: 0.2s;
-  }
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
 
-  .card-marcas .btn-cards-marca {
-    opacity: 0;
-    transform: translateY(10px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-  }
+.card-marcas .btn-cards-marca {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
   
-  .card-marcas.visible .btn-cards-marca {
-    opacity: 1;
-    transform: translateY(0);
-    transition-delay: 0.4s;
-  }
+.card-marcas.visible .btn-cards-marca {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.4s;
+}
 
 .card-body-marcas a.btn {
-    margin-top: auto;
-    align-self: center; 
+  margin-top: auto;
+  align-self: center; 
 }
 
 .btn-cards-marca {
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-    z-index: 1;
-    font-family: var(--titulos_tipo);
-    font-size: 1.3rem;
-    color: var(--Marron_clarito);
-    border-radius: 12px;
-    border: 1.5px solid var(--Marron_clarito);
-    padding: 0.3rem 0.8rem;;
-    background: transparent !important; 
-    transition: color 0.25s ease, transform 0.18s ease, border-color 0.18s ease;
-    -webkit-font-smoothing: antialiased;
-  }
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  z-index: 1;
+  font-family: var(--titulos_tipo);
+  font-size: 1.3rem;
+  color: var(--Marron_clarito);
+  border-radius: 12px;
+  border: 1.5px solid var(--Marron_clarito);
+  padding: 0.3rem 0.8rem;;
+  background: transparent !important; 
+  transition: color 0.25s ease, transform 0.18s ease, border-color 0.18s ease;
+  -webkit-font-smoothing: antialiased;
+}
 
 
 .btn-cards-marca::before {
-    content: "";
-    position: absolute;
-    inset: 0;                        
-    background: var(--Marron_clarito);
-    transform: translateX(-110%);   
-    transition: transform 0.9s cubic-bezier(.22,.9,.2,1), opacity 0.25s ease;
-    z-index: -1;              
-    pointer-events: none;        
+  content: "";
+  position: absolute;
+  inset: 0;                        
+  background: var(--Marron_clarito);
+  transform: translateX(-110%);   
+  transition: transform 0.9s cubic-bezier(.22,.9,.2,1), opacity 0.25s ease;
+  z-index: -1;              
+  pointer-events: none;        
 }
 
 .btn-cards-marca > * {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 .btn-cards-marca:hover {
-    color: var(--Marron_oscuro);
-    transform: scale(1.05);
-    border-color: var(--Marron_clarito);
+  color: var(--Marron_oscuro);
+  transform: scale(1.05);
+  border-color: var(--Marron_clarito);
 }
 
 .btn-cards-marca:hover::before {
-    transform: translateX(0);
+  transform: translateX(0);
 }
 
 .btn-cards-marca:focus::before,
@@ -165,9 +152,13 @@ transform: scale(1.12);
 
 
 
+
+
+
 /* MEDIA QUERIES TARJETAS    */
 
 @media (max-width: 1400px) {
+
   .card-title-marcas {
     font-size: 2rem;
   }
@@ -181,9 +172,11 @@ transform: scale(1.12);
     padding: 1.5rem;
     border-radius: 30px;
   }
+
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
+
   .card-title-marcas {
     font-size: 1.2rem;
   }
@@ -196,9 +189,11 @@ transform: scale(1.12);
   .card-img-top-marcas {
     padding: 1.3rem;
   }
+
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   .card-title-marcas {
     font-size: 1.8rem;
   }
@@ -211,9 +206,11 @@ transform: scale(1.12);
   .card-img-top-marcas {
     padding: 1.5rem;
   }
+
 }
 
 @media (min-width: 576px) and (max-width: 780px) {
+
   .card-title-marcas {
     font-size: 1.5rem;
   }
@@ -227,12 +224,10 @@ transform: scale(1.12);
   .card-img-top-marcas {
     padding: 1.2rem;
   }
+
 }
 
 @media (max-width: 575px) {
-    /* .card-marcas{
-    width: 60vw;
-  } */
 
   .card-title-marcas {
     font-size: 1.4rem;
@@ -257,9 +252,11 @@ transform: scale(1.12);
   .card-body-marcas {
     padding-bottom: 1.2rem;
   }
+
 }
 
 @media (max-width: 400px) {
+
   .card-title-marcas {
     font-size: 1.2rem;
   }
@@ -272,4 +269,5 @@ transform: scale(1.12);
   .card-img-top-marcas {
     padding: 1.2rem;
   }
+  
 }

@@ -24,8 +24,6 @@
 /* CSS personalizado */
 
 .card-home {
-  /* padding-left: 2rem;
-  padding-right: 2rem; */
   background-color: var(--Marron_clarito);
   border: 1.5px solid var(--Marron_oscuro);
   border-radius: 20px;
@@ -39,18 +37,9 @@
 }
 
 .card-home img{
-  /* border-radius: 16px; */
   width: 100%;
-  /* height: auto; */
-  /* object-fit: cover; */
   margin: 2rem;
 }
-
-/* .card-body-home {
-  padding-left: 3rem;
-  padding-right: 1.5rem;
-  margin-left: 0.5rem;
-} */
 
 .card-title-home {
   padding-top: 2rem;
@@ -99,13 +88,12 @@
 }
 
 .text-primary {
-    --bs-text-opacity: 1;
-    color: #520100 !important;
+  --bs-text-opacity: 1;
+  color: #520100 !important;
 }
 
 .text-secondary {
-    color: var(--Marron_oscuro) !important; 
-
+  color: var(--Marron_oscuro) !important; 
 }
 
 .tarjetas-home .card-home {
@@ -122,48 +110,48 @@
 /* ______ BOTONES HOME PEQUEÑOS ______ */
 
 .btn-cards-home {
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-    z-index: 1;
-    font-family: var(--titulos_tipo);
-    font-size: 0.9rem;
-    color: var(--Marron_oscuro);
-    border-radius: 12px;
-    border: 1.5px solid var(--Marron_oscuro);
-    font-weight: 500;
-    padding: 0.4rem 1rem;
-    background: transparent !important; 
-    transition: color 0.25s ease, transform 0.18s ease, border-color 0.18s ease;
-    -webkit-font-smoothing: antialiased;
-    isolation: isolate;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  z-index: 1;
+  font-family: var(--titulos_tipo);
+  font-size: 0.9rem;
+  color: var(--Marron_oscuro);
+  border-radius: 12px;
+  border: 1.5px solid var(--Marron_oscuro);
+  font-weight: 500;
+  padding: 0.4rem 1rem;
+  background: transparent !important; 
+  transition: color 0.25s ease, transform 0.18s ease, border-color 0.18s ease;
+  -webkit-font-smoothing: antialiased;
+  isolation: isolate;
   }
 
 
 .btn-cards-home::before {
-    content: "";
-    position: absolute;
-    inset: 0;                        
-    background: var(--Marron_oscuro);
-    transform: translateX(-110%);   
-    transition: transform 0.9s cubic-bezier(.22,.9,.2,1), opacity 0.25s ease;
-    z-index: -1;              
-    pointer-events: none;        
+  content: "";
+  position: absolute;
+  inset: 0;                        
+  background: var(--Marron_oscuro);
+  transform: translateX(-110%);   
+  transition: transform 0.9s cubic-bezier(.22,.9,.2,1), opacity 0.25s ease;
+  z-index: -1;              
+  pointer-events: none;        
 }
 
 .btn-cards-home > * {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 .btn-cards-home:hover {
-    color: var(--Marron_clarito);
-    transform: scale(1.05);
-    border-color: var(--Marron_oscuro);
+  color: var(--Marron_clarito);
+  transform: scale(1.05);
+  border-color: var(--Marron_oscuro);
 }
 
 .btn-cards-home:hover::before {
-    transform: translateX(0);
+  transform: translateX(0);
 }
 
 .btn-cards-home:focus::before,
@@ -188,7 +176,6 @@
 }
 
 .hero-section .text-section {
-  /* padding: 2rem; */
   text-align: justify;
 }
 
@@ -204,7 +191,6 @@
   text-align: justify;
   padding-right: 8rem;
 } 
-
 
 .hero-section img {
   width: 100%;
@@ -238,7 +224,6 @@
 }
 
 /* -logos y título de "nuestras marcas" */
-
 
 .foot-patro {
   font-size: 2em;
@@ -318,48 +303,48 @@
 }
 
 .btn-cards-home-our {
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-    z-index: 1;
-    font-family: var(--titulos_tipo);
-    font-size: 1.1rem;
-    color: var(--Marron_oscuro);
-    border-radius: 12px;
-    border: 2.5px solid var(--Marron_oscuro);
-    font-weight: 500;
-    padding: 0.4rem 1rem;
-    background: transparent !important; 
-    transition: color 0.25s ease, transform 0.18s ease, border-color 0.18s ease;
-    -webkit-font-smoothing: antialiased;
-    isolation: isolate;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  z-index: 1;
+  font-family: var(--titulos_tipo);
+  font-size: 1.1rem;
+  color: var(--Marron_oscuro);
+  border-radius: 12px;
+  border: 2.5px solid var(--Marron_oscuro);
+  font-weight: 500;
+  padding: 0.4rem 1rem;
+  background: transparent !important; 
+  transition: color 0.25s ease, transform 0.18s ease, border-color 0.18s ease;
+  -webkit-font-smoothing: antialiased;
+  isolation: isolate;
   }
 
 
 .btn-cards-home-our::before {
-    content: "";
-    position: absolute;
-    inset: 0;                        
-    background: var(--Marron_oscuro);
-    transform: translateX(-110%);   
-    transition: transform 0.9s cubic-bezier(.22,.9,.2,1), opacity 0.25s ease;
-    z-index: -1;              
-    pointer-events: none;        
+  content: "";
+  position: absolute;
+  inset: 0;                        
+  background: var(--Marron_oscuro);
+  transform: translateX(-110%);   
+  transition: transform 0.9s cubic-bezier(.22,.9,.2,1), opacity 0.25s ease;
+  z-index: -1;              
+  pointer-events: none;        
 }
 
 .btn-cards-home-our > * {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 .btn-cards-home-our:hover {
-    color: var(--Marron_clarito);
-    transform: scale(1.05);
-    border-color: var(--Marron_oscuro);
+  color: var(--Marron_clarito);
+  transform: scale(1.05);
+  border-color: var(--Marron_oscuro);
 }
 
 .btn-cards-home-our:hover::before {
-    transform: translateX(0);
+  transform: translateX(0);
 }
 
 .btn-cards-home-our:focus::before,
@@ -470,8 +455,42 @@
 
 @media (max-width: 575px) {
 
+  /* ___ ALIMENTANDO FUTURO SOSTENIBLE - HOMEPAGE ___ */
+
+  .hero-section h1 {
+    padding-left: 1rem;
+  }
   
+  .hero-section p {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .hero-section img {
+    padding-left: 2rem;
+  }
+
 }
+
+
+@media (max-width: 400px) {
+
+  /* ___ ALIMENTANDO FUTURO SOSTENIBLE - HOMEPAGE ___ */
+
+  .hero-section img {
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  /* ___ LOGOS HOMEPAGE ___ */
+
+  .logos:before, .logos:after {
+    width: 0px;
+  }
+
+}
+
 
 
 
