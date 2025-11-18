@@ -371,5 +371,109 @@
 
 
 
+/* ______ MEDIA QUERY HOMEPAGE ______ */
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  /* ___ TARJETAS HOME ___ */
+
+  .tarjetas-home .card-home {
+    height: 80%;
+  }
+
+  .perfil-card-home .card-body-home h4 {
+    font-size: 1.5rem;
+  }
+
+  .card-text-home {
+    font-size: 0.8rem;
+    padding-bottom: 0rem;
+  }
+
+  .btn-cards-home {
+    font-size: 0.8rem;
+  }
+
+  .card-text-home {
+    font-size: 0.8rem;
+    padding-bottom: 0rem;
+  }
+
+  /* ___ ALIMENTANDO FUTURO SOSTENIBLE - HOMEPAGE ___ */
+
+  .hero-section h1 {
+    padding-top: 1rem;
+  }
+
+  .hero-section p {
+    padding-right: 0rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .hero-section img {
+    width: 51%;
+  }
+
+  .our-marcas-home {
+    font-size: 4rem;
+  }
+
+}
+
+
+
+@media (max-width: 766px) {
+
+  /* ___ TARJETAS HOME ___ */
+
+ .card-home img {
+    margin: 0rem;
+  }
+
+  .tarjetas-home .card-home {
+    height: 95%;
+  }
+
+  .card-title-home {
+    padding-top: 1rem;
+  }
+
+  /* ___ ALIMENTANDO FUTURO SOSTENIBLE - HOMEPAGE ___ */
+
+  .hero-section h1 {
+    padding-top: 4rem;
+    padding-right: 0rem;
+  }
+
+  .hero-section p {
+    padding-right: 0rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .hero-section img {
+    width: 68%;
+    padding-bottom: 3rem;
+  }
+
+  .our-marcas-home {
+    font-size: 3rem;
+  }
+
+  .logos {
+    padding: 6rem;
+  }
+
+}
+
+@media (max-width: 575px) {
+
+  
+}
+
+
+
 
 
