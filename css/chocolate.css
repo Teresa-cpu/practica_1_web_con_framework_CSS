@@ -212,6 +212,8 @@ color: var(--Marron_oscuro);
 
 @media (min-width: 768px) and (max-width: 991px) {
 
+  /* ___ CHOCOLATE ___ */
+
   .hero-section-choco .text-section {
     padding: 0rem;
   }
@@ -220,8 +222,21 @@ color: var(--Marron_oscuro);
     padding-top: 2rem;
   }
 
+  .hero-section-choco-sost .text-section {
+    padding-top: 4rem;
+  }
 
+  .hero-section-choco-sost {
+    padding-bottom: 4rem;
+  }
 
+  .hero-section-choco-sost p {
+    padding-left: 0rem;
+  }
+
+  .btn-chocolate {
+    font-size: 1.5rem;
+  }
 
 }
 
@@ -229,7 +244,23 @@ color: var(--Marron_oscuro);
 
 @media (max-width: 766px) {
 
-  
+/* ___ CHOCOLATES ___ */
+
+  .marcas-choco h1 {
+    font-size: 3rem;
+  }
+
+  .btn-chocolate {
+    font-size: 1.3rem;
+  }
+
+  .hero-section-choco-sost p {
+    padding-left: 0rem;
+  }
+
+  .hero-section-choco-sost {
+    padding-bottom: 4rem;
+  }
 
 
 
@@ -237,7 +268,15 @@ color: var(--Marron_oscuro);
 
 @media (max-width: 575px) {
 
+  /* ___ CHOCOLATES ___ */
 
+  .hero-section-choco-sost h1 {
+    padding-left: 0rem !important; 
+  }
+
+  .marcas-choco img {
+    height: 182px;
+  }
 
 
 
@@ -246,7 +285,15 @@ color: var(--Marron_oscuro);
 
 @media (max-width: 400px) {
 
+/* ___ CHOCOLATES ___ */
 
+  .marcas-choco img {
+    height: 133px;
+  }
+
+  .marcas-choco {
+    padding: 5rem 2rem;
+  }
 
 
 
