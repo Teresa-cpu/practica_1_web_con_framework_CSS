@@ -1,20 +1,3 @@
-// APARICION POR FILAS 
-// $(window).on('scroll', function() {
-//   $('.card-home').each(function() {
-//     const cardTop = $(this).offset().top;
-//     const cardBottom = cardTop + $(this).outerHeight();
-//     const scrollTop = $(window).scrollTop();
-//     const windowHeight = $(window).height();
-
-//     if (cardTop < scrollTop + windowHeight - 100 && cardBottom > scrollTop + 100) {
-//       $(this).addClass('visible');
-//     } else {
-//       $(this).removeClass('visible');
-//     }
-//   });
-// });
-
-
 //   ANIMACION TITULOS HEADER 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -83,33 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     }
   });
-  
-// ANIMACION FUTURO SALUDABLE 
 
-// gsap.from(".hero-section .text-section", {
-//     scrollTrigger: {
-//       trigger: ".hero-section",
-//       start: "top 85%",
-//       toggleActions: "play none none reverse"
-//     },
-//     x: -80,
-//     opacity: 0,
-//     duration: 1,
-//     ease: "power3.out"
-//   });
-  
-//   gsap.from(".hero-section .image-section", {
-//     scrollTrigger: {
-//       trigger: ".hero-section",
-//       start: "top 85%",
-//       toggleActions: "play none none reverse"
-//     },
-//     x: 80,
-//     opacity: 0,
-//     duration: 1,
-//     ease: "power3.out",
-//     delay: 0.3
-//   });
   
 // APARICION TEXTO E IMAGENES EN TRAJETAS
 
