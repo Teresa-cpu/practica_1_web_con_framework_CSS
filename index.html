@@ -5,263 +5,251 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Nestlé</title>
 
-  <!-- ----------- BOOSTRAP DESDE UN CDN ----------- -->
+<!-- ----------- BOOSTRAP DESDE UN CDN ----------- -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-  <!-- ----------- PROPIO CSS ----------- -->
+<!-- ----------- PROPIO CSS ----------- -->
      <link rel="stylesheet" href="css/style.css">
-     <link rel="stylesheet" href="css/homepage.css">
-     <link rel="stylesheet" href="css/marcas.css">
-     <link rel="stylesheet" href="css/chocolate.css">
-     <link rel="stylesheet" href="css/extrafino.css">
 
-  <!-- FONT AWESOME  -->
+<!-- FONT AWESOME  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
 
   <body>
-  <!-- MENU  -->
-  <nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">
-        <img src="media/img/Nestlé.png" alt="logo nestle" class="logo_nestle">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">NESTLÉ</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" >
-            <i class="fa-solid fa-xmark"></i>
-          </button>
+<!-- MENU  -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="media/img/Nestlé.png" alt="logo nestle" class="logo_nestle">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">NESTLÉ</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" >
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sobre Nestlé</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="marcas.html">Marcas</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Sostenibilidad</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Nutrición</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sobre Nestlé</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="marcas.html">Marcas</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Sostenibilidad</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Nutrición</a>
-            </li>
-          </ul>
-        </div>
+      </div>
+    </nav>
+
+<!-- HOMEPAGE VIDEO -->     
+    <div class="contenedor-video">
+      <video autoplay muted loop id="video-fondo">
+        <source src="media/video/video_home.mp4" type="video/mp4">
+      </video>
+      <div class="letra-video">
+        <h1>NESTLÉ</h1>
+        <p id="texto-pequeño-video">Comprometidos con las personas y el planeta, porque cada acción cuenta para construir un mañana mejor</p>
       </div>
     </div>
-  </nav>
-
-<!-- HOMEPAGE VIDEO -->
-        
-      <div class="contenedor-video">
-        <video autoplay muted loop id="video-fondo">
-          <source src="media/video/video_home.mp4" type="video/mp4">
-        </video>
-        <div class="letra-video">
-          <h1>NESTLÉ</h1>
-          <p id="texto-pequeño-video">Comprometidos con las personas y el planeta, porque cada acción cuenta para construir un mañana mejor</p>
-        </div>
-      </div>
 
 <!-- TARJETAS -->
 <!-- TARJETA COMBINADA -->
-<div class="container tarjetas-home">
-  <div class="row g-4">
+    <div class="container tarjetas-home">
+      <div class="row g-4">
 
-    <div class="col-md-6">
-      <div class="card-home perfil-card-home shadow-lg rounded-4 mb-4">
-        <!-- Contenido tarjeta 1 -->
-        <div class="row g-0 align-items-center">
-          <div class="col-md-4">
-            <img src="media/img/nutriplato.png" class="img-fluid rounded" alt="Foto nutriplato" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
+        <div class="col-md-6">
+          <div class="card-home perfil-card-home shadow-lg rounded-4 mb-4">
+            <div class="row g-0 align-items-center">
+              <div class="col-md-4">
+                <img src="media/img/nutriplato.png" class="img-fluid rounded" alt="Foto nutriplato" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body-home p-5 pt-0" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
+                  <h4 class="card-title-home fw-bold text-primary mb-1">Método Nutriplato</h4>
+                  <p class="card-text-home text-secondary">Es el método ideal para que tus hijos sigan una dieta equilibrada.</p>
+                  <a href="#" class="btn btn-outline-secondary mt-auto btn-cards-home">Ver Más</a>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-md-8">
-            <div class="card-body-home p-5 pt-0" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
-              <h4 class="card-title-home fw-bold text-primary mb-1">Método Nutriplato</h4>
-              <p class="card-text-home text-secondary">Es el método ideal para que tus hijos sigan una dieta equilibrada.</p>
-              <a href="#" class="btn btn-outline-secondary mt-auto btn-cards-home">Ver Más</a>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card-home perfil-card-home shadow-lg rounded-4 mb-4">
+            <div class="row g-0 align-items-center">
+              <div class="col-md-4">
+                <img src="media/img/sostenible.jpg" class="img-fluid rounded" alt="Foto sostenible" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body-home p-5 pt-0" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
+                  <h4 class="card-title-home fw-bold text-primary mb-1">
+                  <h4 class="card-title-home fw-bold text-primary mb-1">Medio Ambiente</h4>
+                  <p class="card-text-home text-secondary">Productos, recetas y menús para mejorar la salud de las personas y del planeta.</p>
+                  <a href="#" class="btn btn-outline-secondary mt-auto btn-cards-home">Ver Más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card-home perfil-card-home shadow-lg rounded-4 mb-4">
+            <div class="row g-0 align-items-center">
+              <div class="col-md-4">
+                <img src="media/img/famili_club.jpeg" class="img-fluid rounded" alt="Foto family club" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body-home p-5 pt-0" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
+                  <h4 class="card-title-home fw-bold text-primary mb-1">
+                  <h4 class="card-title-home fw-bold text-primary mb-1">Nestlé Family Club</h4>
+                  <p class="card-text-home text-secondary">Cupones, novedades, promociones, recetas y consejos para ayudarte a vivir mejor a través de la nutrición.</p>
+                  <a href="#" class="btn btn-outline-secondary mt-auto btn-cards-home">Ver Más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card-home perfil-card-home shadow-lg rounded-4 mb-4">
+            <div class="row g-0 align-items-center">
+              <div class="col-md-4">
+                <img src="media/img/cero_emisiones.jpg" class="img-fluid rounded" alt="Foto cero emisiones" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body-home p-5 pt-0" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
+                  <h4 class="card-title-home fw-bold text-primary mb-1">
+                  <h4 class="card-title-home fw-bold text-primary mb-1">Cero Emisiones</h4>
+                  <p class="card-text-home text-secondary">La lucha contra el cambio climático no puede esperar y nosotros tampoco: hoja de ruta para alcanzar cero emisiones netas en 2050.</p>
+                  <a href="#" class="btn btn-outline-secondary mt-auto btn-cards-home">Ver Más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <section class="hero-section d-flex align-items-center">
+      <div class="container text-light">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-12 text-section">
+            <h1 class="fw-bold mb-3">ALIMENTANDO UN FUTURO MÁS SALUDABLE</h1>
+            <p>
+              Desarrollamos todo el poder de la alimentación para mejorar la calidad de vida, hoy y mañana.
+              Creemos que lo que comemos influye en nuestro bienestar, en nuestra salud y en el mundo que
+              dejaremos a las próximas generaciones. Por eso innovamos en productos más nutritivos, apoyamos
+              con 12 millones de euros a agricultores y ganaderos españoles responsables y fomentamos hábitos
+              de alimentación equilibrada, porque cada decisión que tomamos tiene el potencial de construir un
+              futuro más saludable y sostenible para todos.
+            </p>
+          </div>
+          <div class="col-lg-6 col-md-12 image-section">
+            <img src="media/img/home_salud.jpg" alt="Foto home salud" class="img-fluid rounded shadow-lg">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="foot-patro">
+      <h1 class="our-marcas-home"> NUESTRAS MARCAS </h1>
+      <div class="logos">
+        <div class="logos-slide">
+          <img src="media/img/CHOKAPIK.png" alt="">
+          <img src="media/img/KITKAT.png" alt="">
+          <img src="media/img/GARDEN.png" alt="">
+          <img src="media/img/ILKYBAE.avif" alt="">
+          <img src="media/img/profesional.png" alt="">
+          <img src="media/img/NESCAFE.png" alt="">
+
+          <img src="media/img/CHOKAPIK.png" alt="">
+          <img src="media/img/KITKAT.png" alt="">
+          <img src="media/img/GARDEN.png" alt="">
+          <img src="media/img/ILKYBAE.avif" alt="">
+          <img src="media/img/profesional.png" alt="">
+          <img src="media/img/NESCAFE.png" alt="">
+        </div>
+      </div>
+      <div class="btn-our-marcas-home">
+        <a href="marcas.html" class="btn btn-outline-secondary mt-auto btn-cards-home-our">Ver todas las marcas</a>
+      </div>
+    </div>
+
+    <footer class="footer-general py-5 rounded-top-4">
+      <div class="container">
+        <div class="row gy-4 gx-5">
+
+          <div class="col-md-4 text-center text-md-start">
+            <img src="media/img/logo nestlé blanco real.png" alt="Logo blanco Nestlé" class="footer-logo mb-3">
+            <p class="footer-p">Desarrollamos todo el poder de la alimentación para mejorar la calidad de vida, hoy y para las futuras generaciones.</p>
+          </div>
+
+          <div class="col-md-3">
+            <h5 class="footer-title">Oficina central</h5>
+            <p class="footer-p mb-1">Edificio Nestlé</p>
+            <p class="footer-p mb-1">C/Clara Campoamor, 2, 08950 Esplugues</p>
+            <p class="footer-p footer-email-id mb-1">de Llobregat (Barcelona)</p>
+            <p class="footer-p footer-email footer-email-id mb-1">nestle@nestle.es</p>
+            <p class="footer-p footer-email mb-1">consulta@es.nestle.es</p>
+            <h6 class="footer-p mt-2">T. (+34) 93 480 51 00</h6>
+          </div>
+
+          <div class="col-md-2">
+            <h5 class="footer-title">Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html" class=" footer-p footer-link">Home</a></li>
+              <li><a href="#" class="footer-p footer-link">Sobre Nestlé</a></li>
+              <li><a href="marcas.html" class="footer-p footer-link">Marcas</a></li>
+              <li><a href="#" class="footer-p footer-link">Sostenibilidad</a></li>
+              <li><a href="#" class="footer-p footer-link">Nutrición</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <h5 class="footer-title">Atención al cliente</h5>
+            <form class="footer-form mb-4">
+              <input type="text" class="form-control bg-transparent border-0 text-light me-2" placeholder="Envíanos comentarios para mejorar" required>
+              <button type="submit" class="btn btn-link text-light p-0"><i class="fas fa-arrow-right"></i></button>
+            </form>
+            <div class="footer-rrss d-flex justify-content-md-start justify-content-center gap-3 fs-4">
+              <a href="https://www.facebook.com/Nestle.ES/">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a href="https://x.com/Nestle_es">
+                <i class="fa-brands fa-square-x-twitter"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/nestle-s-a-/">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="flickr.com/photos/nestle/albums">
+                <i class="fa-brands fa-flickr"></i>
+              </a>
+              <a href="https://www.youtube.com/user/wwwnestletv">
+                <i class="fa-brands fa-square-youtube"></i>
+              </a>
             </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="col-md-6">
-      <div class="card-home perfil-card-home shadow-lg rounded-4 mb-4">
-        <!-- Contenido tarjeta 2 -->
-        <div class="row g-0 align-items-center">
-          <div class="col-md-4">
-            <img src="media/img/sostenible.jpg" class="img-fluid rounded" alt="Foto sostenible" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body-home p-5 pt-0" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
-              <h4 class="card-title-home fw-bold text-primary mb-1">
-              <h4 class="card-title-home fw-bold text-primary mb-1">Medio Ambiente</h4>
-              <p class="card-text-home text-secondary">Productos, recetas y menús para mejorar la salud de las personas y del planeta.</p>
-              <a href="#" class="btn btn-outline-secondary mt-auto btn-cards-home">Ver Más</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-6">
-      <div class="card-home perfil-card-home shadow-lg rounded-4 mb-4">
-        <!-- Contenido tarjeta 3 -->
-        <div class="row g-0 align-items-center">
-          <div class="col-md-4">
-            <img src="media/img/famili_club.jpeg" class="img-fluid rounded" alt="Foto family club" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body-home p-5 pt-0" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
-              <h4 class="card-title-home fw-bold text-primary mb-1">
-              <h4 class="card-title-home fw-bold text-primary mb-1">Nestlé Family Club</h4>
-              <p class="card-text-home text-secondary">Cupones, novedades, promociones, recetas y consejos para ayudarte a vivir mejor a través de la nutrición.</p>
-              <a href="#" class="btn btn-outline-secondary mt-auto btn-cards-home">Ver Más</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-6">
-      <div class="card-home perfil-card-home shadow-lg rounded-4 mb-4">
-        <!-- Contenido tarjeta 4 -->
-        <div class="row g-0 align-items-center">
-          <div class="col-md-4">
-            <img src="media/img/cero_emisiones.jpg" class="img-fluid rounded" alt="Foto cero emisiones" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body-home p-5 pt-0" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
-              <h4 class="card-title-home fw-bold text-primary mb-1">
-              <h4 class="card-title-home fw-bold text-primary mb-1">Cero Emisiones</h4>
-              <p class="card-text-home text-secondary">La lucha contra el cambio climático no puede esperar y nosotros tampoco: hoja de ruta para alcanzar cero emisiones netas en 2050.</p>
-              <a href="#" class="btn btn-outline-secondary mt-auto btn-cards-home">Ver Más</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<section class="hero-section d-flex align-items-center">
-  <div class="container text-light">
-    <div class="row align-items-center">
-      <div class="col-lg-6 col-md-12 text-section">
-        <h1 class="fw-bold mb-3">ALIMENTANDO UN FUTURO MÁS SALUDABLE</h1>
-        <p>
-          Desarrollamos todo el poder de la alimentación para mejorar la calidad de vida, hoy y mañana.
-          Creemos que lo que comemos influye en nuestro bienestar, en nuestra salud y en el mundo que
-          dejaremos a las próximas generaciones. Por eso innovamos en productos más nutritivos, apoyamos
-          con 12 millones de euros a agricultores y ganaderos españoles responsables y fomentamos hábitos
-          de alimentación equilibrada, porque cada decisión que tomamos tiene el potencial de construir un
-          futuro más saludable y sostenible para todos.
-        </p>
-      </div>
-      <div class="col-lg-6 col-md-12 image-section">
-        <img src="media/img/home_salud.jpg" alt="Foto home salud" class="img-fluid rounded shadow-lg">
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="foot-patro">
-  <h1 class="our-marcas-home"> NUESTRAS MARCAS </h1>
-  <div class="logos">
-    <div class="logos-slide">
-      <img src="media/img/CHOKAPIK.png" alt="">
-      <img src="media/img/KITKAT.png" alt="">
-      <img src="media/img/GARDEN.png" alt="">
-      <img src="media/img/ILKYBAE.avif" alt="">
-      <img src="media/img/profesional.png" alt="">
-      <img src="media/img/NESCAFE.png" alt="">
-
-      <img src="media/img/CHOKAPIK.png" alt="">
-      <img src="media/img/KITKAT.png" alt="">
-      <img src="media/img/GARDEN.png" alt="">
-      <img src="media/img/ILKYBAE.avif" alt="">
-      <img src="media/img/profesional.png" alt="">
-      <img src="media/img/NESCAFE.png" alt="">
-    </div>
-  </div>
-  <div class="btn-our-marcas-home">
-    <a href="marcas.html" class="btn btn-outline-secondary mt-auto btn-cards-home-our">Ver todas las marcas</a>
-  </div>
-</div>
-
-<footer class="footer-general py-5 rounded-top-4">
-  <div class="container">
-    <div class="row gy-4 gx-5">
-      <!-- Columna 1 -->
-      <div class="col-md-4 text-center text-md-start">
-        <img src="media/img/logo nestlé blanco real.png" alt="Logo blanco Nestlé" class="footer-logo mb-3">
-        <p class="footer-p">Desarrollamos todo el poder de la alimentación para mejorar la calidad de vida, hoy y para las futuras generaciones.</p>
-      </div>
-
-      <!-- Columna 2 -->
-      <div class="col-md-3">
-        <h5 class="footer-title">Oficina central</h5>
-        <p class="footer-p mb-1">Edificio Nestlé</p>
-        <p class="footer-p mb-1">C/Clara Campoamor, 2, 08950 Esplugues</p>
-        <p class="footer-p footer-email-id mb-1">de Llobregat (Barcelona)</p>
-        <p class="footer-p footer-email footer-email-id mb-1">nestle@nestle.es</p>
-        <p class="footer-p footer-email mb-1">consulta@es.nestle.es</p>
-        <h6 class="footer-p mt-2">T. (+34) 93 480 51 00</h6>
-      </div>
-
-      <!-- Columna 3 -->
-      <div class="col-md-2">
-        <h5 class="footer-title">Links</h5>
-        <ul class="list-unstyled">
-          <li><a href="index.html" class=" footer-p footer-link">Home</a></li>
-          <li><a href="#" class="footer-p footer-link">Sobre Nestlé</a></li>
-          <li><a href="marcas.html" class="footer-p footer-link">Marcas</a></li>
-          <li><a href="#" class="footer-p footer-link">Sostenibilidad</a></li>
-          <li><a href="#" class="footer-p footer-link">Nutrición</a></li>
-        </ul>
-      </div>
-
-      <!-- Columna 4 -->
-      <div class="col-md-3">
-        <h5 class="footer-title">Atención al cliente</h5>
-        <form class="footer-form mb-4">
-          <input type="text" class="form-control bg-transparent border-0 text-light me-2" placeholder="Envíanos comentarios para mejorar" required>
-          <button type="submit" class="btn btn-link text-light p-0"><i class="fas fa-arrow-right"></i></button>
-        </form>
-        <div class="footer-rrss d-flex justify-content-md-start justify-content-center gap-3 fs-4">
-          <a href="https://www.facebook.com/Nestle.ES/">
-            <i class="fa-brands fa-facebook"></i>
-          </a>
-          <a href="https://x.com/Nestle_es">
-            <i class="fa-brands fa-square-x-twitter"></i>
-          </a>
-          <a href="https://www.linkedin.com/company/nestle-s-a-/">
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-          <a href="flickr.com/photos/nestle/albums">
-            <i class="fa-brands fa-flickr"></i>
-          </a>
-           <a href="https://www.youtube.com/user/wwwnestletv">
-            <i class="fa-brands fa-square-youtube"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
+    </footer>
 
 
-  
+
 <!-- JAVASCRIPT LENIS -->
   <script src="https://unpkg.com/lenis@1.3.13/dist/lenis.min.js"></script> 
 

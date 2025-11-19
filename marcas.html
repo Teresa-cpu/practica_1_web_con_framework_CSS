@@ -10,10 +10,6 @@
   
     <!-- ----------- PROPIO CSS ----------- -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/homepage.css">
-    <link rel="stylesheet" href="css/marcas.css">
-    <link rel="stylesheet" href="css/chocolate.css">
-    <link rel="stylesheet" href="css/extrafino.css">
 
   <!-- FONT AWESOME  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -21,234 +17,228 @@
 
   <body>
   <!-- MENU  -->
-  <nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">
-        <img src="media/img/Nestlé.png" alt="logo nestle" class="logo_nestle">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">NESTLÉ</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" >
-            <i class="fa-solid fa-xmark"></i>
-          </button>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="media/img/Nestlé.png" alt="logo nestle" class="logo_nestle">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">NESTLÉ</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" >
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sobre Nestlé</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="marcas.html">Marcas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sostenibilidad</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Nutrición</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sobre Nestlé</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="marcas.html">Marcas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sostenibilidad</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Nutrición</a>
-            </li>
-          </ul>
+      </div>
+    </nav>
+
+<!-- MARCAS VIDEO -->
+    <div class="contenedor-video">
+      <video autoplay muted loop id="video-fondo">
+        <source src="media/video/marcas_cocinando.mp4" type="video/mp4">
+      </video>
+      <div class="letra-video">
+        <h1>MARCAS</h1>
+        <p id="texto-pequeño-video">En Nestlé tenemos más de 2000 marcas comercializadas en el mundo. 
+                En esta sección, tendrás la oportunidad de descubrir nuestras marcas en España</p>
+      </div>
+    </div>
+       
+
+<!-- TARJETAS  -->
+    <div id="tarjetas-marcas" class="d-flex justify-content-center py-0">
+      <div class="row row-cols-1 row-cols-sm-3 row-cols-lg-5 g-4 py-0 mt-5 mb-5" style="width: 80vw;">
+        <div class="col">
+          <div class="card-marcas h-100">
+            <img src="media/img/agua.jpg" class="card-img-top-marcas" alt="botella de agua">
+            <div class="card-body-marcas">
+              <h5 class="card-title-marcas">AGUA MINERAL</h5>
+              <a href="#" class="btn btn-outline-secondary mt-auto btn-cards-marca">VER MÁS</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-marcas h-100">
+            <img src="media/img/animales.png" class="card-img-top-marcas" alt="plato de comida de perros">
+            <div class="card-body-marcas">
+              <h5 class="card-title-marcas">ALIMENTACIÓN PARA MASCOTAS</h5>
+              <a href="#" class="btn btn-outline-secondary mt-auto btn-cards-marca">VER MÁS</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-marcas h-100">
+            <img src="media/img/bebe.jpg" class="card-img-top-marcas" alt="papillas de bebé">
+            <div class="card-body-marcas">
+              <h5 class="card-title-marcas">ALIMENTACIÓN INFANTIL</h5>
+              <a href="#" class="btn btn-outline-secondary btn-cards-marca">VER MÁS</a>
+          </div>
+        </div>
+        </div>
+        <div class="col">
+          <div class="card-marcas h-100">
+            <img src="media/img/cafe.jpg" class="card-img-top-marcas" alt="taza de café">
+            <div class="card-body-marcas">
+              <h5 class="card-title-marcas">CAFÉ</h5>
+              <a href="#" class="btn btn-outline-secondary mt-auto btn-cards-marca">VER MÁS</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-marcas h-100">
+            <img src="media/img/cereales.jpg" class="card-img-top-marcas" alt="bol de cereales con fresas">
+            <div class="card-body-marcas">
+              <h5 class="card-title-marcas">CEREALES</h5>
+              <a href="#" class="btn btn-outline-secondary mt-auto btn-cards-marca">VER MÁS</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-marcas h-100">
+            <img src="media/img/chocolate.jpg" class="card-img-top-marcas" alt="honzas de chocolate">
+            <div class="card-body-marcas">
+              <h5 class="card-title-marcas">CHOCOLATE</h5>
+              <a href="chocolate.html" class="btn btn-outline-secondary mt-auto btn-cards-marca">VER MÁS</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-marcas h-100">
+            <img src="media/img/platos.jpg" class="card-img-top-marcas" alt="bol de poke">
+            <div class="card-body-marcas">
+              <h5 class="card-title-marcas">PLATOS PREPARADOS</h5>
+              <a href="#" class="btn btn-outline-secondary mt-auto btn-cards-marca">VER MÁS</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-marcas h-100">
+            <img src="media/img/ciencia.jpg" class="card-img-top-marcas" alt="batidos de proteina">
+            <div class="card-body-marcas">
+              <h5 class="card-title-marcas">NESTLÉ HEALTH SCIENCE</h5>
+              <a href="#" class="btn btn-outline-secondary mt-auto btn-cards-marca">VER MÁS</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-marcas h-100">
+            <img src="media/img/leche.jpg" class="card-img-top-marcas" alt="jarra de cristal con leche">
+            <div class="card-body-marcas">
+              <h5 class="card-title-marcas">LÁCTEOS</h5>
+              <a href="#" class="btn btn-outline-secondary mt-auto btn-cards-marca">VER MÁS</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-marcas h-100">
+            <img src="media/img/profesional.jpg" class="card-img-top-marcas" alt="logo de nestlé professional">
+            <div class="card-body-marcas">
+              <h5 class="card-title-marcas">NESTLÉ PROFESIONAL</h5>
+              <a href="#" class="btn btn-outline-secondary mt-auto btn-cards-marca">VER MÁS</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </nav>
 
-  <!-- MARCAS VIDEO -->
+    <footer class="footer-general py-5 rounded-top-4">
+      <div class="container">
+        <div class="row gy-4 gx-5">
+
+          <div class="col-md-4 text-center text-md-start">
+            <img src="media/img/logo nestlé blanco real.png" alt="Logo blanco Nestlé" class="footer-logo mb-3">
+            <p class="footer-p">Desarrollamos todo el poder de la alimentación para mejorar la calidad de vida, hoy y para las futuras generaciones.</p>
+          </div>
+
+          <div class="col-md-3">
+            <h5 class="footer-title">Oficina central</h5>
+            <p class="footer-p mb-1">Edificio Nestlé</p>
+            <p class="footer-p mb-1">C/Clara Campoamor, 2, 08950 Esplugues</p>
+            <p class="footer-p footer-email-id mb-1">de Llobregat (Barcelona)</p>
+            <p class="footer-p footer-email footer-email-id mb-1">nestle@nestle.es</p>
+            <p class="footer-p footer-email mb-1">consulta@es.nestle.es</p>
+            <h6 class="footer-p mt-2">T. (+34) 93 480 51 00</h6>
+          </div>
+
+          <div class="col-md-2">
+            <h5 class="footer-title">Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html" class=" footer-p footer-link">Home</a></li>
+              <li><a href="#" class="footer-p footer-link">Sobre Nestlé</a></li>
+              <li><a href="marcas.html" class="footer-p footer-link">Marcas</a></li>
+              <li><a href="#" class="footer-p footer-link">Sostenibilidad</a></li>
+              <li><a href="#" class="footer-p footer-link">Nutrición</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <h5 class="footer-title">Atención al cliente</h5>
+            <form class="footer-form mb-4">
+              <input type="text" class="form-control bg-transparent border-0 text-light me-2" placeholder="Envíanos comentarios para mejorar" required>
+              <button type="submit" class="btn btn-link text-light p-0"><i class="fas fa-arrow-right"></i></button>
+            </form>
+            <div class="footer-rrss d-flex justify-content-md-start justify-content-center gap-3 fs-4">
+              <a href="https://www.facebook.com/Nestle.ES/">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a href="https://x.com/Nestle_es">
+                <i class="fa-brands fa-square-x-twitter"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/nestle-s-a-/">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="flickr.com/photos/nestle/albums">
+                <i class="fa-brands fa-flickr"></i>
+              </a>
+              <a href="https://www.youtube.com/user/wwwnestletv">
+                <i class="fa-brands fa-square-youtube"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     
-  <div class="contenedor-video">
-    <video autoplay muted loop id="video-fondo">
-      <source src="media/video/marcas_cocinando.mp4" type="video/mp4">
-    </video>
-    <div class="letra-video">
-      <h1>MARCAS</h1>
-      <p id="texto-pequeño-video">En Nestlé tenemos más de 2000 marcas comercializadas en el mundo. 
-              En esta sección, tendrás la oportunidad de descubrir nuestras marcas en España</p>
-    </div>
-  </div>
-       
+    
 
-  <!-- TARJETAS  -->
-  <div id="tarjetas-marcas" class="d-flex justify-content-center py-0">
-    <div class="row row-cols-1 row-cols-sm-3 row-cols-lg-5 g-4 py-0 mt-5 mb-5" style="width: 80vw;">
-      <div class="col">
-        <div class="card-marcas h-100">
-          <img src="media/img/agua.jpg" class="card-img-top-marcas" alt="botella de agua">
-          <div class="card-body-marcas">
-            <h5 class="card-title-marcas">AGUA MINERAL</h5>
-            <a href="#" class="btn btn-outline-secondary mt-auto btn-cards-marca">VER MÁS</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card-marcas h-100">
-          <img src="media/img/animales.png" class="card-img-top-marcas" alt="plato de comida de perros">
-          <div class="card-body-marcas">
-            <h5 class="card-title-marcas">ALIMENTACIÓN PARA MASCOTAS</h5>
-            <a href="#" class="btn btn-outline-secondary mt-auto btn-cards-marca">VER MÁS</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card-marcas h-100">
-          <img src="media/img/bebe.jpg" class="card-img-top-marcas" alt="papillas de bebé">
-          <div class="card-body-marcas">
-            <h5 class="card-title-marcas">ALIMENTACIÓN INFANTIL</h5>
-            <a href="#" class="btn btn-outline-secondary btn-cards-marca">VER MÁS</a>
-        </div>
-      </div>
-      </div>
-      <div class="col">
-        <div class="card-marcas h-100">
-          <img src="media/img/cafe.jpg" class="card-img-top-marcas" alt="taza de café">
-          <div class="card-body-marcas">
-            <h5 class="card-title-marcas">CAFÉ</h5>
-            <a href="#" class="btn btn-outline-secondary mt-auto btn-cards-marca">VER MÁS</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card-marcas h-100">
-          <img src="media/img/cereales.jpg" class="card-img-top-marcas" alt="bol de cereales con fresas">
-          <div class="card-body-marcas">
-            <h5 class="card-title-marcas">CEREALES</h5>
-            <a href="#" class="btn btn-outline-secondary mt-auto btn-cards-marca">VER MÁS</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card-marcas h-100">
-          <img src="media/img/chocolate.jpg" class="card-img-top-marcas" alt="honzas de chocolate">
-          <div class="card-body-marcas">
-            <h5 class="card-title-marcas">CHOCOLATE</h5>
-            <a href="chocolate.html" class="btn btn-outline-secondary mt-auto btn-cards-marca">VER MÁS</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card-marcas h-100">
-          <img src="media/img/platos.jpg" class="card-img-top-marcas" alt="bol de poke">
-          <div class="card-body-marcas">
-            <h5 class="card-title-marcas">PLATOS PREPARADOS</h5>
-            <a href="#" class="btn btn-outline-secondary mt-auto btn-cards-marca">VER MÁS</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card-marcas h-100">
-          <img src="media/img/ciencia.jpg" class="card-img-top-marcas" alt="batidos de proteina">
-          <div class="card-body-marcas">
-            <h5 class="card-title-marcas">NESTLÉ HEALTH SCIENCE</h5>
-            <a href="#" class="btn btn-outline-secondary mt-auto btn-cards-marca">VER MÁS</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card-marcas h-100">
-          <img src="media/img/leche.jpg" class="card-img-top-marcas" alt="jarra de cristal con leche">
-          <div class="card-body-marcas">
-            <h5 class="card-title-marcas">LÁCTEOS</h5>
-            <a href="#" class="btn btn-outline-secondary mt-auto btn-cards-marca">VER MÁS</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card-marcas h-100">
-          <img src="media/img/profesional.jpg" class="card-img-top-marcas" alt="logo de nestlé professional">
-          <div class="card-body-marcas">
-            <h5 class="card-title-marcas">NESTLÉ PROFESIONAL</h5>
-            <a href="#" class="btn btn-outline-secondary mt-auto btn-cards-marca">VER MÁS</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<!-- JAVASCRIPT LENIS -->
+  <script src="https://unpkg.com/lenis@1.3.13/dist/lenis.min.js"></script>
 
-<footer class="footer-general py-5 rounded-top-4">
-  <div class="container">
-    <div class="row gy-4 gx-5">
-      <!-- Columna 1 -->
-      <div class="col-md-4 text-center text-md-start">
-        <img src="media/img/logo nestlé blanco real.png" alt="Logo blanco Nestlé" class="footer-logo mb-3">
-        <p class="footer-p">Desarrollamos todo el poder de la alimentación para mejorar la calidad de vida, hoy y para las futuras generaciones.</p>
-      </div>
+<!-- JAVASCRIPT BOOTSTRAP  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
-      <!-- Columna 2 -->
-      <div class="col-md-3">
-        <h5 class="footer-title">Oficina central</h5>
-        <p class="footer-p mb-1">Edificio Nestlé</p>
-        <p class="footer-p mb-1">C/Clara Campoamor, 2, 08950 Esplugues</p>
-        <p class="footer-p footer-email-id mb-1">de Llobregat (Barcelona)</p>
-        <p class="footer-p footer-email footer-email-id mb-1">nestle@nestle.es</p>
-        <p class="footer-p footer-email mb-1">consulta@es.nestle.es</p>
-        <h6 class="footer-p mt-2">T. (+34) 93 480 51 00</h6>
-      </div>
+<!-- JAVASCRIPT: JQUERY -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-      <!-- Columna 3 -->
-      <div class="col-md-2">
-        <h5 class="footer-title">Links</h5>
-        <ul class="list-unstyled">
-          <li><a href="index.html" class=" footer-p footer-link">Home</a></li>
-          <li><a href="#" class="footer-p footer-link">Sobre Nestlé</a></li>
-          <li><a href="marcas.html" class="footer-p footer-link">Marcas</a></li>
-          <li><a href="#" class="footer-p footer-link">Sostenibilidad</a></li>
-          <li><a href="#" class="footer-p footer-link">Nutrición</a></li>
-        </ul>
-      </div>
+<!-- GSAP + ScrollTrigger (CDN) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>     
 
-      <!-- Columna 4 -->
-      <div class="col-md-3">
-        <h5 class="footer-title">Atención al cliente</h5>
-        <form class="footer-form mb-4">
-          <input type="text" class="form-control bg-transparent border-0 text-light me-2" placeholder="Envíanos comentarios para mejorar" required>
-          <button type="submit" class="btn btn-link text-light p-0"><i class="fas fa-arrow-right"></i></button>
-        </form>
-        <div class="footer-rrss d-flex justify-content-md-start justify-content-center gap-3 fs-4">
-          <a href="https://www.facebook.com/Nestle.ES/">
-            <i class="fa-brands fa-facebook"></i>
-          </a>
-          <a href="https://x.com/Nestle_es">
-            <i class="fa-brands fa-square-x-twitter"></i>
-          </a>
-          <a href="https://www.linkedin.com/company/nestle-s-a-/">
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-          <a href="flickr.com/photos/nestle/albums">
-            <i class="fa-brands fa-flickr"></i>
-          </a>
-           <a href="https://www.youtube.com/user/wwwnestletv">
-            <i class="fa-brands fa-square-youtube"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-
-  
-
-
-       
-    <!-- JAVASCRIPT LENIS -->
-    <script src="https://unpkg.com/lenis@1.3.13/dist/lenis.min.js"></script>
-    <!-- JAVASCRIPT BOOTSTRAP  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-
-     <!-- JAVASCRIPT: JQUERY -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-     <!-- GSAP + ScrollTrigger (CDN) -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>     
-
-     <!-- MY JS SCRIPT  -->
-      <!-- <script src="js/script.js"></script> -->
-      <script src="js/marcas.js"></script>
+<!-- MY JS SCRIPT  -->
+  <script src="js/marcas.js"></script>
 
   </body>
 </html>
