@@ -1025,7 +1025,7 @@ color: var(--Marron_oscuro);
 
 
 
-/* _________ MEDIA QUERY GENERAL _________ */
+/* _________ MEDIA QUERY _________ */
 
 
 @media (max-width: 1400px) {
@@ -1092,11 +1092,13 @@ color: var(--Marron_oscuro);
     font-size: 0.9rem; 
   }
 
+
 /* ______ FOOTER ______  */
 
   .footer-title { 
     font-size: 1.35rem; 
   }    
+
   .footer-p { 
     font-size: 0.7rem; 
   }
@@ -1195,6 +1197,7 @@ color: var(--Marron_oscuro);
     padding-top: 2rem;
   }
 
+
 /* ______ EXTRAFINO ______ */
 
   .extrafino-elegir h1 {
@@ -1245,6 +1248,7 @@ color: var(--Marron_oscuro);
     font-size: 1rem; 
   }
 
+
 /* ______ FOOTER GENERAL ______  */
 
   .footer-title { 
@@ -1254,6 +1258,7 @@ color: var(--Marron_oscuro);
   .footer-p { 
     font-size: 0.75rem; 
   } 
+
 
 /* ______ HOMEPAGE ______ */
 
@@ -1271,7 +1276,7 @@ color: var(--Marron_oscuro);
     padding-top: 1rem;
   }
 
-  /* ALIMENTANDO FUTURO SOSTENIBLE - HOMEPAGE */
+/* ALIMENTANDO FUTURO SOSTENIBLE - HOMEPAGE */
 
   .hero-section h1 {
     padding-top: 4rem;
@@ -1297,6 +1302,7 @@ color: var(--Marron_oscuro);
     padding: 6rem;
   }
 
+
 /* ______ CHOCOLATE ______ */
 
   .marcas-choco h1 {
@@ -1314,6 +1320,7 @@ color: var(--Marron_oscuro);
   .hero-section-choco-sost {
     padding-bottom: 4rem;
   }
+
 
 /* ______ EXTRAFINO ______ */
 
@@ -1352,6 +1359,7 @@ color: var(--Marron_oscuro);
     padding-left: 0rem;
   }
 
+
 /* ______ MARCAS ______ */
 
   .card-title-marcas {
@@ -1377,6 +1385,7 @@ color: var(--Marron_oscuro);
   .card-body-marcas {
     padding-bottom: 1.2rem;
   }
+
 
 /* ______ CHOCOLATES ______ */
 
@@ -1407,6 +1416,7 @@ color: var(--Marron_oscuro);
     font-size: 0.7rem; 
   }
 
+
 /* ______ FOOTER ______ */
 
   footer, 
@@ -1432,6 +1442,7 @@ color: var(--Marron_oscuro);
     min-width: 0;  
     flex: 1 1 auto;
   }
+
 
   /* ______ MARCAS ______ */
 
@@ -1459,6 +1470,14 @@ color: var(--Marron_oscuro);
     padding-bottom: 1.2rem;
   }
 
+
+/* ________ CHOCOLATE _________ */
+
+  .hero-section-choco-sost {
+    padding-bottom: 4rem;
+  }
+
+  
 /* ______ EXTRAFINO ______ */
 
   .extrafino-apetecer h1 {
@@ -1487,6 +1506,7 @@ color: var(--Marron_oscuro);
     font-size: 0.6rem; 
   }
 
+
 /* ______ FOOTER ______ */
 
   footer, 
@@ -1513,6 +1533,13 @@ color: var(--Marron_oscuro);
     flex: 1 1 auto;
   }
 
+
+/* ________ CHOCOLATE _______ */
+
+  .hero-section-choco-sost {
+    padding-bottom: 4rem;
+  }
+
 }
 
 
@@ -1532,11 +1559,12 @@ color: var(--Marron_oscuro);
     padding-right: 2rem;
   }
 
-  /* LOGOS HOMEPAGE */
+/* LOGOS HOMEPAGE */
 
   .logos:before, .logos:after {
     width: 0px;
   }
+
 
 /* ______ MARCAS ______ */
 
@@ -1553,6 +1581,7 @@ color: var(--Marron_oscuro);
     padding: 1.2rem;
   }
 
+
 /* ______ CHOCOLATES ______ */
 
   .marcas-choco img {
@@ -1561,6 +1590,10 @@ color: var(--Marron_oscuro);
 
   .marcas-choco {
     padding: 5rem 2rem;
+  }
+
+  .hero-section-choco-sost {
+    padding-bottom: 4rem;
   }
 
 }
@@ -1582,6 +1615,7 @@ color: var(--Marron_oscuro);
     font-size: 0.55rem; 
     line-height: 1.25; 
   }
+
 
 /* ______ FOOTER ______ */
 
@@ -1609,6 +1643,12 @@ color: var(--Marron_oscuro);
     flex: 1 1 auto;
   }
 
+
+  /* ________ CHOCOLATE _________ */
+
+  .hero-section-choco-sost {
+    padding-bottom: 4rem;
+  }
 
 }
 
