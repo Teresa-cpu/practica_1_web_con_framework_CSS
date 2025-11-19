@@ -1073,6 +1073,14 @@ color: var(--Marron_oscuro);
 
 /* ______ CHOCOLATE ______ */
 
+  .hero-section-choco h1 {
+    font-size: 2rem;
+  }
+
+  .hero-section-choco p {
+    font-size: 1rem;
+  }
+
   .marcas-choco img {
     height: 133px I !important;
   }
