@@ -16,13 +16,15 @@ body {
     background-color: var(--Marron_clarito);
 }
 
-/* ___ MENU GENERAL ___ */
+/* __________ GENERALES: MENÚ Y FOOTER __________ */
+
+/* ______ MENU GENERAL ______ */
 
 .navbar {
     background-color: var(--Marron_clarito);
 }
 
-.logo_nestle{
+.logo_nestle {
     width: 10vh;
 }
 
@@ -89,7 +91,11 @@ body {
 }
 
 
-/* VIDEO PRINCIPAL DE LAS DIFERENTES PÁGINAS */
+
+
+
+
+/* ______ VIDEO PRINCIPAL DE LAS DIFERENTES PÁGINAS ______ */
 
 /* video + header  */
 
@@ -138,7 +144,10 @@ body {
 }
 
 
-/* ___ FOOTER GENERAL ___ */
+
+
+
+/* ______ FOOTER GENERAL ______ */
 
 .footer-general {
     background-color: var(--Marron_oscuro);
@@ -238,13 +247,335 @@ body {
 
 
 
-
-
-
 /* _________ HOMEPAGE _________ */
 
+/* ___ TARJETAS ___ */
+
+.tarjetas-home {
+    padding: 3rem 0;
+}
+
+/* CSS personalizado */
+
+.card-home {
+  background-color: var(--Marron_clarito);
+  border: 1.5px solid var(--Marron_oscuro);
+  border-radius: 20px;
+  transition: all 0.4s ease;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: scale(0.9);
+}
+
+.card-home img{
+  width: 100%;
+  margin: 2rem;
+}
+
+.card-title-home {
+  padding-top: 2rem;
+  color: var(--rojo_oscuro);
+  font-family: var(--titulos_tipo);
+  font-size: 1.8rem;
+  padding-bottom: 0.5rem;
+}
+
+.card-text-home{
+  font-family: var(--texto_tipo);
+  color: var(--Marron_oscuro);
+  line-height: 1.4;
+  font-size: 0.9rem;
+  padding-bottom: 0.6rem;
+}
+
+.perfil-card-home {
+  background: none;
+  transition: all 0.3s ease;
+}
+
+.card-home:hover
+.perfil-card-home:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.perfil-card-home img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.perfil-card-home .card-body-home h4 {
+  letter-spacing: 0.5px;
+}
+
+.perfil-card-home .btn-primary {
+  background-color: var(--rojo_oscuro);
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.perfil-card-home .btn-primary:hover {
+  background-color: var(--rojo_oscuro);
+}
+
+.text-primary {
+  --bs-text-opacity: 1;
+  color: #520100 !important;
+}
+
+.text-secondary {
+  color: var(--Marron_oscuro) !important; 
+}
+
+.tarjetas-home .card-home {
+  height: 100%;
+}
+.row.g-4 > [class*="col-"] {
+  display: flex;
+}
+
+/* ___ BOTONES HOME PEQUEÑOS ___ */
+
+.btn-cards-home {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  z-index: 1;
+  font-family: var(--titulos_tipo);
+  font-size: 0.9rem;
+  color: var(--Marron_oscuro);
+  border-radius: 12px;
+  border: 1.5px solid var(--Marron_oscuro);
+  font-weight: 500;
+  padding: 0.4rem 1rem;
+  background: transparent !important; 
+  transition: color 0.25s ease, transform 0.18s ease, border-color 0.18s ease;
+  -webkit-font-smoothing: antialiased;
+  isolation: isolate;
+  }
+
+.btn-cards-home::before {
+  content: "";
+  position: absolute;
+  inset: 0;                        
+  background: var(--Marron_oscuro);
+  transform: translateX(-110%);   
+  transition: transform 0.9s cubic-bezier(.22,.9,.2,1), opacity 0.25s ease;
+  z-index: -1;              
+  pointer-events: none;        
+}
+
+.btn-cards-home > * {
+  position: relative;
+  z-index: 1;
+}
+
+.btn-cards-home:hover {
+  color: var(--Marron_clarito);
+  transform: scale(1.05);
+  border-color: var(--Marron_oscuro);
+}
+
+.btn-cards-home:hover::before {
+  transform: translateX(0);
+}
+
+.btn-cards-home:focus::before,
+.btn-cards-home:focus {
+  transform: none;
+  outline: none;
+  color: var(--Marron_clarito);
+}
+
+/* ___ APARTADO DE ALIMENTACIÓN SALUDABLE ___ */
 
 
+.hero-section {
+  background-color: var(--Marron_oscuro); 
+  min-height: 74vh; 
+  color: var(--Marron_clarito);
+  display: flex;
+  align-items: center;
+}
+
+.hero-section .text-section {
+  text-align: justify;
+}
+
+.hero-section h1 {
+  font-size: 2rem;
+  padding-right: 8rem;
+  font-family: var(--titulos_tipo);
+  letter-spacing: 0.15rem;
+}
+
+.hero-section p {
+  font-size: 1rem;
+  text-align: justify;
+  padding-right: 8rem;
+} 
+
+.hero-section img {
+  width: 100%;
+  height: auto;
+  border-radius: 2rem;
+  object-fit: cover;
+}
+
+/* ___ APARTADO DE NUESTRAS MARCAS ___ */
+
+.carrousel-container-infinito {
+  padding: 5rem;
+}
+
+.carrousel-track-infinito {
+  display: flex;
+  width: max-content;
+  animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50);
+  }
+}
+
+/* ___ logos y título de "nuestras marcas" ___ */
+
+.foot-patro {
+  font-size: 2em;
+  font-family: var(--titulos_tipo);
+  padding-top: 3em;
+  padding-bottom: 5rem;
+}
+
+.our-marcas-home {
+  font-size: 5rem;
+  color: var(--rojo_oscuro);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 8rem;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #FEFFF1);
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #FEFFF1);
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: slide 35s linear infinite;
+  white-space: nowrap;
+}
+
+.logos-slide img {
+  width: 120px;         
+  height: 74px;        
+  object-fit: contain;    
+  margin: 0 2.5em;
+  vertical-align: middle;
+}
+
+/* ___ botón "ver todas las marcas" ___ */
+
+.btn-our-marcas-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-cards-home-our {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  z-index: 1;
+  font-family: var(--titulos_tipo);
+  font-size: 1.1rem;
+  color: var(--Marron_oscuro);
+  border-radius: 12px;
+  border: 2.5px solid var(--Marron_oscuro);
+  font-weight: 500;
+  padding: 0.4rem 1rem;
+  background: transparent !important; 
+  transition: color 0.25s ease, transform 0.18s ease, border-color 0.18s ease;
+  -webkit-font-smoothing: antialiased;
+  isolation: isolate;
+  }
+
+
+.btn-cards-home-our::before {
+  content: "";
+  position: absolute;
+  inset: 0;                        
+  background: var(--Marron_oscuro);
+  transform: translateX(-110%);   
+  transition: transform 0.9s cubic-bezier(.22,.9,.2,1), opacity 0.25s ease;
+  z-index: -1;              
+  pointer-events: none;        
+}
+
+.btn-cards-home-our > * {
+  position: relative;
+  z-index: 1;
+}
+
+.btn-cards-home-our:hover {
+  color: var(--Marron_clarito);
+  transform: scale(1.05);
+  border-color: var(--Marron_oscuro);
+}
+
+.btn-cards-home-our:hover::before {
+  transform: translateX(0);
+}
+
+.btn-cards-home-our:focus::before,
+.btn-cards-home-our:focus {
+  transform: none;
+  outline: none;
+  color: var(--Marron_clarito);
+}
 
 
 
@@ -255,9 +586,140 @@ body {
 
 /* _________ MARCAS _________ */
 
+/* TARJETAS  */
+
+.card-marcas {
+  background-color: var(--Marron_oscuro);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.4s ease;
+  border-radius: 15px;
+  overflow: hidden;
+
+/* transicion aparecer */
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.card-marcas.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-marcas:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.card-marcas img {
+  transition: transform 0.4s ease;
+
+/* transicion gris  */
+  filter: grayscale(100%);
+  transition: filter 0.5s ease, transform 0.3s ease;
+}
+
+.card-marcas:hover img {
+  transform: scale(1.05);
+  filter: grayscale(0%);
+  transform: scale(1.12);
+}
+
+.card-img-top-marcas {
+  padding: 2rem;
+  border-radius: 40px;
+}
+
+.card-body-marcas{
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.card-title-marcas {
+  font-family: var(--titulos_tipo);
+  font-size: 1.7rem;
+  color: var(--Marron_clarito);
+  padding-bottom: 1rem;
+  text-align: center;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.card-marcas.visible .card-title-marcas {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+
+.card-marcas .btn-cards-marca {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+  
+.card-marcas.visible .btn-cards-marca {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.4s;
+}
+
+.card-body-marcas a.btn {
+  margin-top: auto;
+  align-self: center; 
+}
+
+.btn-cards-marca {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  z-index: 1;
+  font-family: var(--titulos_tipo);
+  font-size: 1.1rem;
+  color: var(--Marron_clarito);
+  border-radius: 12px;
+  border: 1.5px solid var(--Marron_clarito);
+  padding: 0.3rem 0.8rem;;
+  background: transparent !important; 
+  transition: color 0.25s ease, transform 0.18s ease, border-color 0.18s ease;
+  -webkit-font-smoothing: antialiased;
+}
 
 
+.btn-cards-marca::before {
+  content: "";
+  position: absolute;
+  inset: 0;                        
+  background: var(--Marron_clarito);
+  transform: translateX(-110%);   
+  transition: transform 0.9s cubic-bezier(.22,.9,.2,1), opacity 0.25s ease;
+  z-index: -1;              
+  pointer-events: none;        
+}
 
+.btn-cards-marca > * {
+  position: relative;
+  z-index: 1;
+}
+
+.btn-cards-marca:hover {
+  color: var(--Marron_oscuro);
+  transform: scale(1.05);
+  border-color: var(--Marron_clarito);
+}
+
+.btn-cards-marca:hover::before {
+  transform: translateX(0);
+}
+
+.btn-cards-marca:focus::before,
+.btn-cards-marca:focus {
+  transform: none;
+  outline: none;
+  color: var(--Marron_oscuro);
+}
 
 
 
@@ -267,8 +729,188 @@ body {
 
 /* _________ CHOCOLATE _________ */
 
+/* ______APARTADO DELEITAMOS TU PALADAR ______ */
 
 
+.hero-section-choco {
+  background-color: var(--Marron_clarito);
+  min-height: 74vh;
+  color: var(--Marron_oscuro);
+  display: block; 
+  padding: 4rem 0;
+}
+
+.hero-section-choco .text-section {
+  padding: 2rem;
+  /* text-align: justify; */
+}
+
+.hero-section-choco h1 {
+  font-size: 2.5rem;
+  letter-spacing: 0.05rem;
+  font-family: var(--titulos_tipo);
+  color: var(--rojo_oscuro);
+  margin-bottom: 1.5rem;
+}
+
+.hero-section-choco p {
+  font-size: 1.2rem;
+  text-align: justify;
+  color: var(--Marron_oscuro);
+}
+
+.hero-section-choco .image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section-choco img {
+  width: 85%;
+  height: auto;
+  border-radius: 2rem;
+  object-fit: cover;
+}
+
+
+/* ______ APARTADO MARCAS CHOCO ______ */
+
+.img-choco {
+  row-gap: 2rem;
+  justify-content: center;
+}
+
+.img-choco a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.marcas-choco {
+  text-align: center;
+  padding: 8rem 2rem;
+  background-color: var(--Marron_oscuro);
+  color: var(--Marron_clarito);
+}
+
+.marcas-choco h1 {
+  font-family: var(--titulos_tipo);
+  letter-spacing: 0.15rem;
+  margin-bottom: 1rem;
+  font-size: 4rem;
+}
+
+.marcas-choco h3 {
+  font-weight: 400;
+  margin-bottom: 3rem;
+  font-size: 1rem;
+}
+
+.marcas-choco .col-md-4 {
+  display: flex;
+  justify-content: center;  
+  align-items: center;      
+  flex-wrap: wrap;         
+  gap: 1.5rem;              
+}
+
+.marcas-choco img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+}
+
+.marcas-choco img:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  transform: scale(1.08);
+  filter: brightness(1.1) contrast(1.05);
+}
+
+.btn-chocolate {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  z-index: 1;
+  font-family: var(--titulos_tipo);
+  font-size: 1.5rem;
+  color: var(--Marron_clarito);
+  border-radius: 12px;
+  border: 1.5px solid var(--Marron_clarito);
+  font-weight: 500;
+  padding: 0.4rem 1rem;
+  background: transparent !important; 
+  transition: color 0.25s ease, transform 0.18s ease, border-color 0.18s ease;
+  -webkit-font-smoothing: antialiased;
+  isolation: isolate;
+  margin-top: 4rem;
+}
+
+.btn-chocolate::before {
+  content: "";
+  position: absolute;
+  inset: 0;                        
+  background: var(--Marron_clarito);
+  transform: translateX(-110%);   
+  transition: transform 0.9s cubic-bezier(.22,.9,.2,1), opacity 0.25s ease;
+  z-index: -1;              
+  pointer-events: none;        
+}
+
+.btn-chocolate > * {
+  position: relative;
+  z-index: 1;
+}
+
+.btn-chocolate:hover {
+  color: var(--Marron_oscuro);
+  transform: scale(1.05);
+  border-color: var(--Marron_clarito);
+  transform: scale(1.1) translateY(-2px);
+}
+
+.btn-chocolate:hover::before {
+  transform: translateX(0);
+}
+
+.btn-chocolate:focus::before,
+.btn-chocolate:focus {
+transform: none;
+outline: none;
+color: var(--Marron_oscuro);
+}
+
+/* ______ APARTADO CACAO SOSTENIBLE ______ */
+
+.hero-section-choco-sost {
+  background-color: var(--Marron_clarito);
+  min-height: 74vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-section-choco-sost h1 {
+  color: var(--rojo_oscuro);
+  font-size: 2.5rem;
+}
+
+.hero-section-choco-sost p {
+  color: var(--Marron_oscuro);
+  font-size: 1.2rem;
+
+}
+
+.hero-section-choco-sost .text-section {
+  padding: 2rem;
+  text-align: justify;
+}
+
+.hero-section-choco-sost img {
+  width: 100%;
+  height: auto;
+  border-radius: 2rem;
+  object-fit: cover;
+}
 
 
 
@@ -276,6 +918,116 @@ body {
 
 
 /* _________ EXTRAFINO _________ */
+
+/* ______ TARJETAS DE LOS CHOCOLATES _____ */
+
+.extrafino-elegir {
+  background-color: var(--Marron_oscuro);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+/* TITULO Y TEXTO */
+
+.extrafino-elegir h1 {
+  font-size: 4rem;
+  font-family: var(--titulos_tipo);
+  color: var(--Marron_clarito);
+  letter-spacing: 0.15rem;
+  margin-bottom: 1rem;
+}
+
+.extrafino-elegir p {
+  color: var(--Marron_clarito);
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 5rem;
+}
+
+/* HOVER CHOCOLATES */
+
+.extrafino-elegir img {
+  object-fit: cover;
+  border-radius: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+}
+
+.extrafino-elegir img:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  transform: scale(1.15);
+  filter: brightness(1.10) contrast(1.1);
+}
+
+/* ______ APARTADO APETECER ALGO MÁS ______ */
+
+.extrafino-apetecer {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.extrafino-apetecer h1 {
+  font-family: var(--titulos_tipo);
+  color: var(--rojo_oscuro);
+  font-size: 4rem;
+  padding-bottom: 2rem;
+}
+
+/* ______ BOTONES EXTRAFINO ______ */
+
+.btn-cards-extrafino {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  z-index: 1;
+  font-family: var(--titulos_tipo);
+  font-size: 1.3rem;
+  color: var(--Marron_oscuro);
+  border-radius: 12px;
+  border: 1.5px solid var(--Marron_oscuro);
+  font-weight: 500;
+  padding: 0.4rem 1rem;
+  background: transparent !important; 
+  transition: color 0.25s ease, transform 0.18s ease, border-color 0.18s ease;
+  -webkit-font-smoothing: antialiased;
+  isolation: isolate;
+}
+
+
+.btn-cards-extrafino::before {
+  content: "";
+  position: absolute;
+  inset: 0;                        
+  background: var(--Marron_oscuro);
+  transform: translateX(-110%);   
+  transition: transform 0.9s cubic-bezier(.22,.9,.2,1), opacity 0.25s ease;
+  z-index: -1;              
+  pointer-events: none;        
+}
+
+.btn-cards-extrafino > * {
+  position: relative;
+  z-index: 1;
+}
+
+.btn-cards-extrafino:hover {
+  color: var(--Marron_clarito);
+  transform: scale(1.05);
+  border-color: var(--Marron_oscuro);
+}
+
+.btn-cards-extrafino:hover::before {
+  transform: translateX(0);
+}
+
+.btn-cards-extrafino:focus::before,
+.btn-cards-extrafino:focus {
+  transform: none;
+  outline: none;
+  color: var(--Marron_clarito);
+}
+
+
 
 
 
@@ -285,44 +1037,92 @@ body {
 @media (max-width: 1199px) {
 
 /* CHOCOLATE */
-  .marcas-choco img {
-    height: 133px I !important;
-  }
+    .marcas-choco img {
+        height: 133px I !important;
+    }
 
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
 
-/* video home  */
+/* ___ VIDEO HOME ___ */
+
     #texto-pequeño-video { 
         font-size: 0.9rem; 
     }
 
- /* ___ CHOCOLATE ___ */
+/* ___ HOMEPAGE ___ */
 
-  .hero-section-choco .text-section {
-    padding: 0rem;
-  }
+/* TARJETAS HOME */
 
-  .hero-section-choco .image-section {
-    padding-top: 2rem;
-  }
+    .tarjetas-home .card-home {
+        height: 80%;
+    }
 
-  .hero-section-choco-sost .text-section {
-    padding-top: 4rem;
-  }
+    .perfil-card-home .card-body-home h4 {
+        font-size: 1.5rem;
+    }
 
-  .hero-section-choco-sost {
-    padding-bottom: 4rem;
-  }
+    .card-text-home {
+        font-size: 0.8rem;
+        padding-bottom: 0rem;
+    }
 
-  .hero-section-choco-sost p {
-    padding-left: 0rem;
-  }
+    .btn-cards-home {
+        font-size: 0.8rem;
+    }
 
-  .btn-chocolate {
-    font-size: 1.5rem;
-  }
+    .card-text-home {
+        font-size: 0.8rem;
+        padding-bottom: 0rem;
+    }
+
+  /* ALIMENTANDO FUTURO SOSTENIBLE - HOMEPAGE */
+
+    .hero-section h1 {
+        padding-top: 1rem;
+    }
+
+    .hero-section p {
+        padding-right: 0rem;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    .hero-section img {
+        width: 51%;
+    }
+
+    .our-marcas-home {
+        font-size: 4rem;
+    }
+
+
+/* ___ CHOCOLATE ___ */
+
+    .hero-section-choco .text-section {
+        padding: 0rem;
+    }
+
+    .hero-section-choco .image-section {
+        padding-top: 2rem;
+    }
+
+    .hero-section-choco-sost .text-section {
+        padding-top: 4rem;
+    }
+
+    .hero-section-choco-sost {
+        padding-bottom: 4rem;
+    }
+
+    .hero-section-choco-sost p {
+        padding-left: 0rem;
+    }
+
+    .btn-chocolate {
+        font-size: 1.5rem;
+    }
 
     .hero-section-choco-sost h1 {
         padding-top: 2rem;
@@ -337,15 +1137,13 @@ body {
         font-size: 0.7rem; 
     }
 
- 
-
 }
 
 
 
 @media (min-width: 576px) and (max-width: 767px) {
 
-/* video home  */
+/* ___ VIDEO HOME ___ */
     .letra-video h1 { 
         font-size: 10rem; 
     }
@@ -354,7 +1152,7 @@ body {
         font-size: 1rem; 
     }
 
-/* footer  */
+/* ___ FOOTER GENERAL ___  */
     .footer-title { 
         font-size: 1.9rem; 
     }  
@@ -402,7 +1200,7 @@ body {
 
 @media (min-width: 480px) and (max-width: 575px) {
 
-/* video home  */
+/* ___ VIDEO HOME ___ */
     .letra-video h1 { 
         font-size: 8rem; 
     }
@@ -444,7 +1242,7 @@ body {
 
 @media (min-width: 400px) and (max-width: 479px) {
 
-/* video home  */
+/* ___ VIDEO HOME ___ */
     .letra-video h1 { 
         font-size: 6rem; 
     }
@@ -502,7 +1300,7 @@ body {
 
 @media (max-width: 399px) {
 
-/* video home  */
+/* ___ VIDEO HOME ___ */
     .letra-video h1 { 
         font-size: 4.5rem; 
     }
