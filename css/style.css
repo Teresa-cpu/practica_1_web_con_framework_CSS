@@ -296,6 +296,10 @@ body {
     font-size: 1.5rem;
   }
 
+    .hero-section-choco-sost h1 {
+        padding-top: 2rem;
+    }
+
 /* ___ FOOTER ___  */
 
     .footer-title { 

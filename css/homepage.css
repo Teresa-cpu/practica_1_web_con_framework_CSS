@@ -470,6 +470,11 @@
     padding-left: 2rem;
   }
 
+  .row>* {
+    padding-right: 0rem;
+    padding-left: 0rem;
+  }
+
 }
 
 
