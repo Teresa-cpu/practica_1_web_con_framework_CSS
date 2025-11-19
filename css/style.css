@@ -1692,6 +1692,14 @@ color: var(--Marron_oscuro);
     padding-bottom: 4rem;
   }
 
+  .hero-section-choco-sost h1 {
+    font-size: 2.3rem;
+  }
+
+  .hero-section-choco-sost p {
+    font-size: 0.9rem;
+  }
+
   .marcas-choco img {
     height: 122px;
   }
@@ -1702,6 +1710,35 @@ color: var(--Marron_oscuro);
 
   .btn-chocolate {
     font-size: 1.2rem;
+  }
+
+
+/* ________ EXTRAFINO _________ */
+
+  .hero-section-choco h1 {
+    font-size: 2.3rem;
+  }
+
+  .hero-section-choco p {
+    font-size: 0.9rem;
+  }
+
+  .extrafino-elegir h1 {
+    font-size: 2.3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  } 
+
+  .extrafino-apetecer h1 {
+    font-size: 2.3rem;
+  }
+
+  .btn-cards-extrafino {
+    margin-bottom: 2rem;
+  }
+
+  .btn-cards-extrafino {
+    font-size: 0.9rem;
   }
 
 }
