@@ -43,7 +43,6 @@
 /* HOVER CHOCOLATES */
 
 .extrafino-elegir img {
-  
   object-fit: cover;
   border-radius: 1.5rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
@@ -55,13 +54,6 @@
   transform: scale(1.15);
   filter: brightness(1.10) contrast(1.1);
 }
-
-/* 
-.extrafino-elegir a:hover img {
-  transform: scale(1.08);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-  filter: brightness(1.1) contrast(1.05);
-} */
 
 /* ______ APARTADO APETECER ALGO MÁS ______ */
 
@@ -137,10 +129,10 @@
 
 @media (min-width: 768px) and (max-width: 991px) {
 
-
-
-
-
+ /* ___ EXTRAFINO ___ */
+ .extrafino-elegir h1 {
+  font-size: 3.5rem;
+}
 
 }
 
@@ -148,15 +140,14 @@
 
 @media (max-width: 766px) {
 
-  
-
+.extrafino-elegir h1 {
+  font-size: 3rem;
+}
 
 
 }
 
 @media (max-width: 575px) {
-
-
 
 
 
@@ -167,8 +158,6 @@
 
 
 
-
-  
 
 }
 

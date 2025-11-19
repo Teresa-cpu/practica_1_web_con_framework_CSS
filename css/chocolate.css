@@ -28,12 +28,12 @@
 
 .hero-section-choco .text-section {
   padding: 2rem;
-  text-align: justify;
+  /* text-align: justify; */
 }
 
 .hero-section-choco h1 {
   font-size: 2rem;
-  letter-spacing: 0.15rem;
+  letter-spacing: 0.05rem;
   font-family: var(--titulos_tipo);
   color: var(--rojo_oscuro);
   margin-bottom: 1.5rem;
@@ -203,108 +203,4 @@ color: var(--Marron_oscuro);
   object-fit: cover;
 }
 
-
-
-/* ______ MEDIA QUERY CHOCOLATE ______ */
-
-/* ______ MEDIA QUERY HOMEPAGE ______ */
-
-@media (max-width: 1199px) {
-
-  .marcas-choco img {
-    height: 133px;
-  }
-
-}
-
-
-@media (min-width: 768px) and (max-width: 991px) {
-
-  /* ___ CHOCOLATE ___ */
-
-  .hero-section-choco .text-section {
-    padding: 0rem;
-  }
-
-  .hero-section-choco .image-section {
-    padding-top: 2rem;
-  }
-
-  .hero-section-choco-sost .text-section {
-    padding-top: 4rem;
-  }
-
-  .hero-section-choco-sost {
-    padding-bottom: 4rem;
-  }
-
-  .hero-section-choco-sost p {
-    padding-left: 0rem;
-  }
-
-  .btn-chocolate {
-    font-size: 1.5rem;
-  }
-
-}
-
-
-
-@media (max-width: 766px) {
-
-/* ___ CHOCOLATES ___ */
-
-  .marcas-choco h1 {
-    font-size: 3rem;
-  }
-
-  .btn-chocolate {
-    font-size: 1.3rem;
-  }
-
-  .hero-section-choco-sost p {
-    padding-left: 0rem;
-  }
-
-  .hero-section-choco-sost {
-    padding-bottom: 4rem;
-  }
-
-
-
-}
-
-@media (max-width: 575px) {
-
-  /* ___ CHOCOLATES ___ */
-
-  .hero-section-choco-sost h1 {
-    padding-left: 0rem !important; 
-  }
-
-  .marcas-choco img {
-    height: 182px;
-  }
-
-
-
-}
-
-
-@media (max-width: 400px) {
-
-/* ___ CHOCOLATES ___ */
-
-  .marcas-choco img {
-    height: 133px;
-  }
-
-  .marcas-choco {
-    padding: 5rem 2rem;
-  }
-
-
-
-
-}
 
