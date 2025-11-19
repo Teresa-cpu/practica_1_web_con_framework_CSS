@@ -16,7 +16,7 @@ body {
     background-color: var(--Marron_clarito);
 }
 
-/* ___ MENU ___ */
+/* ___ MENU GENERAL ___ */
 
 .navbar {
     background-color: var(--Marron_clarito);
@@ -91,7 +91,7 @@ body {
 
 /* VIDEO PRINCIPAL DE LAS DIFERENTES PÁGINAS */
 
-/* video + headrer  */
+/* video + header  */
 
 .contenedor-video {
     position: relative;
@@ -136,6 +136,7 @@ body {
     font-family: var(--texto_tipo);
     font-size: 1rem;
 }
+
 
 /* ___ FOOTER GENERAL ___ */
 

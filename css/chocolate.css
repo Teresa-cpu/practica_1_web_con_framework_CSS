@@ -209,6 +209,14 @@ color: var(--Marron_oscuro);
 
 /* ______ MEDIA QUERY HOMEPAGE ______ */
 
+@media (max-width: 1199px) {
+
+  .marcas-choco img {
+    height: 133px;
+  }
+
+}
+
 
 @media (min-width: 768px) and (max-width: 991px) {
 
