@@ -110,6 +110,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    z-index: 1;
 }
 
 .letra-video {
@@ -119,6 +120,8 @@ body {
     color: var(--Marron_clarito);
     transform: translate(-50%, -50%);
     text-align: center;
+    z-index: 2;              
+    pointer-events: none;  
 }
 
 .letra-video h1{
