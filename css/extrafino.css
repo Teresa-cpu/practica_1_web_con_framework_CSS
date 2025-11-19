@@ -149,7 +149,13 @@
 
 @media (max-width: 575px) {
 
+  .extrafino-apetecer h1 {
+    font-size: 3rem;
+  }
 
+  .btn-cards-extrafino {
+    margin-bottom: 2rem;
+  }
 
 }
 

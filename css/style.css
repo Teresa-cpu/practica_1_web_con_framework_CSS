@@ -253,11 +253,12 @@ body {
 
 
 /* _________ MEDIA QUERY GENERAL _________ */
+
 @media (max-width: 1199px) {
 
-    /* CHOCOLATE */
+/* CHOCOLATE */
   .marcas-choco img {
-    height: 133px;
+    height: 133px I !important;
   }
 
 }
@@ -306,29 +307,6 @@ body {
 }
 
 
-@media (max-width: 766px) {
-
-/* ___ CHOCOLATES ___ */
-
-  .marcas-choco h1 {
-    font-size: 3rem;
-  }
-
-  .btn-chocolate {
-    font-size: 1.3rem;
-  }
-
-  .hero-section-choco-sost p {
-    padding-left: 0rem;
-  }
-
-  .hero-section-choco-sost {
-    padding-bottom: 4rem;
-  }
-
-
-
-}
 
 @media (min-width: 576px) and (max-width: 767px) {
 
@@ -349,6 +327,26 @@ body {
     .footer-p { 
         font-size: 0.75rem; 
     } 
+
+
+/* ___ CHOCOLATE ___ */
+
+    .marcas-choco h1 {
+        font-size: 3rem;
+    }
+
+    .btn-chocolate {
+        font-size: 1.3rem;
+    }
+
+    .hero-section-choco-sost p {
+        padding-left: 0rem;
+    }
+
+    .hero-section-choco-sost {
+        padding-bottom: 4rem;
+    }
+
 
 }
 
