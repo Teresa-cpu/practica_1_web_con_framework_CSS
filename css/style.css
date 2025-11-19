@@ -183,6 +183,15 @@ body {
     align-items: center;
     border-bottom: 1px solid var(--Marron_clarito);
     padding-bottom: 0.5rem;
+    max-width: 250px;
+}
+
+.footer-form input {
+    flex: 1; 
+}
+
+.footer-form button {
+    flex-shrink: 0; 
 }
 
 .footer-form button i:hover {
@@ -195,7 +204,25 @@ body {
     font-size: 0.75rem;
 }
 
+.footer-rrss {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap; 
+}
+
+.footer-rrss a {
+    text-decoration: none;
+}
+
 .footer-rrss a i{
+    color: var(--Marron_clarito);
+    font-size: 1.6rem;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
     color: var(--Marron_clarito);
 }
 
@@ -203,6 +230,7 @@ body {
     color: var(--sombreado_hover);
     cursor: pointer;
     transition: color 0.2s ease;
+    text-decoration: none;
 }
 
 
@@ -308,6 +336,9 @@ body {
     .footer-p { 
         font-size: 0.7rem; 
     }
+
+ 
+
 }
 
 
@@ -331,6 +362,7 @@ body {
     .footer-p { 
         font-size: 0.75rem; 
     } 
+
 
 
 /* ___ CHOCOLATE ___ */
@@ -381,24 +413,30 @@ body {
 
 /* ___ FOOTER ___ */
 
-    .footer-logo {
-        width: 21%;
-    }
-
-    .footer-p {
-        font-size: 0.9rem;
+    footer, 
+    .footer-container, 
+    .footer-row, 
+    .footer-col {
+        max-width: 100%;
+        overflow-x: hidden;
         padding-left: 2rem;
         padding-right: 2rem;
     }
 
-    .footer-title {
-        font-size: 1.5rem;
-        padding-left: 2rem;
+    /* Evita que padding lateral genere overflow */
+    .footer-col {
+        padding-left: 1rem;
+        padding-right: 2rem;
     }
 
+    /* El formulario se contrae correctamente */
     .footer-form {
-        padding-left: 2rem;
-        padding-right: 2rem;
+        width: 90%;
+    }
+
+    .footer-form input {
+        min-width: 0;     /* MUY IMPORTANTE */
+        flex: 1 1 auto;
     }
 
 
@@ -416,19 +454,30 @@ body {
 
 /* ___ FOOTER ___ */
 
-    .footer-p {
+    footer, 
+    .footer-container, 
+    .footer-row, 
+    .footer-col {
+        max-width: 100%;
+        overflow-x: hidden;
         padding-left: 2rem;
         padding-right: 2rem;
     }
 
-    .footer-title {
-        padding-left: 2rem;
+    /* Evita que padding lateral genere overflow */
+    .footer-col {
+        padding-left: 1rem;
         padding-right: 2rem;
     }
 
+    /* El formulario se contrae correctamente */
     .footer-form {
-        padding-left: 2rem;
-        padding-right: 2rem;
+        width: 90%;
+    }
+
+    .footer-form input {
+        min-width: 0;     /* MUY IMPORTANTE */
+        flex: 1 1 auto;
     }
 
 
@@ -465,19 +514,30 @@ body {
 
 /* ___ FOOTER ___ */
 
-    .footer-p {
+    footer, 
+    .footer-container, 
+    .footer-row, 
+    .footer-col {
+        max-width: 100%;
+        overflow-x: hidden;
         padding-left: 2rem;
         padding-right: 2rem;
     }
 
-    .footer-title {
-        padding-left: 2rem;
+    /* Evita que padding lateral genere overflow */
+    .footer-col {
+        padding-left: 1rem;
         padding-right: 2rem;
     }
 
+    /* El formulario se contrae correctamente */
     .footer-form {
-        padding-left: 2rem;
-        padding-right: 2rem;
+        width: 90%;
+    }
+
+    .footer-form input {
+        min-width: 0;     /* MUY IMPORTANTE */
+        flex: 1 1 auto;
     }
 }
 
