@@ -1036,106 +1036,107 @@ color: var(--Marron_oscuro);
 
 @media (max-width: 1199px) {
 
-/* CHOCOLATE */
-    .marcas-choco img {
-        height: 133px I !important;
-    }
+/* ______ CHOCOLATE ______ */
+
+  .marcas-choco img {
+    height: 133px I !important;
+  }
 
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
 
-/* ___ VIDEO HOME ___ */
+/* ______ VIDEO HOME ______ */
 
-    #texto-pequeño-video { 
-        font-size: 0.9rem; 
-    }
+  #texto-pequeño-video { 
+    font-size: 0.9rem; 
+  }
 
-/* ___ HOMEPAGE ___ */
+/* ______ HOMEPAGE ______ */
 
 /* TARJETAS HOME */
 
-    .tarjetas-home .card-home {
-        height: 80%;
-    }
+  .tarjetas-home .card-home {
+    height: 80%;
+  }
 
-    .perfil-card-home .card-body-home h4 {
-        font-size: 1.5rem;
-    }
+  .perfil-card-home .card-body-home h4 {
+    font-size: 1.5rem;
+  }
 
-    .card-text-home {
-        font-size: 0.8rem;
-        padding-bottom: 0rem;
-    }
+  .card-text-home {
+    font-size: 0.8rem;
+    padding-bottom: 0rem;
+  }
 
-    .btn-cards-home {
-        font-size: 0.8rem;
-    }
+  .btn-cards-home {
+    font-size: 0.8rem;
+  }
 
-    .card-text-home {
-        font-size: 0.8rem;
-        padding-bottom: 0rem;
-    }
+  .card-text-home {
+    font-size: 0.8rem;
+    padding-bottom: 0rem;
+  }
 
-  /* ALIMENTANDO FUTURO SOSTENIBLE - HOMEPAGE */
+/* ALIMENTANDO FUTURO SOSTENIBLE - HOMEPAGE */
 
-    .hero-section h1 {
-        padding-top: 1rem;
-    }
+  .hero-section h1 {
+    padding-top: 1rem;
+  }
 
-    .hero-section p {
-        padding-right: 0rem;
-        padding-top: 1rem;
-        padding-bottom: 2rem;
-    }
+  .hero-section p {
+    padding-right: 0rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
 
-    .hero-section img {
-        width: 51%;
-    }
+  .hero-section img {
+    width: 51%;
+  }
 
-    .our-marcas-home {
-        font-size: 4rem;
-    }
+  .our-marcas-home {
+    font-size: 4rem;
+  }
 
 
-/* ___ CHOCOLATE ___ */
+/* ______ CHOCOLATE ______ */
 
-    .hero-section-choco .text-section {
-        padding: 0rem;
-    }
+  .hero-section-choco .text-section {
+    padding: 0rem;
+  }
 
-    .hero-section-choco .image-section {
-        padding-top: 2rem;
-    }
+  .hero-section-choco .image-section {
+    padding-top: 2rem;
+  }
 
-    .hero-section-choco-sost .text-section {
-        padding-top: 4rem;
-    }
+  .hero-section-choco-sost .text-section {
+    padding-top: 4rem;
+  }
 
-    .hero-section-choco-sost {
-        padding-bottom: 4rem;
-    }
+  .hero-section-choco-sost {
+    padding-bottom: 4rem;
+  }
 
-    .hero-section-choco-sost p {
-        padding-left: 0rem;
-    }
+  .hero-section-choco-sost p {
+    padding-left: 0rem;
+  }
 
-    .btn-chocolate {
-        font-size: 1.5rem;
-    }
+  .btn-chocolate {
+    font-size: 1.5rem;
+  }
 
-    .hero-section-choco-sost h1 {
-        padding-top: 2rem;
-    }
+  .hero-section-choco-sost h1 {
+    padding-top: 2rem;
+  }
 
-/* ___ FOOTER ___  */
+/* ______ FOOTER ______  */
 
-    .footer-title { 
-        font-size: 1.35rem; 
-    }    
-    .footer-p { 
-        font-size: 0.7rem; 
-    }
+  .footer-title { 
+    font-size: 1.35rem; 
+  }    
+  .footer-p { 
+    font-size: 0.7rem; 
+  }
 
 }
 
@@ -1143,50 +1144,116 @@ color: var(--Marron_oscuro);
 
 @media (min-width: 576px) and (max-width: 767px) {
 
-/* ___ VIDEO HOME ___ */
-    .letra-video h1 { 
-        font-size: 10rem; 
-    }
+/* ______ VIDEO HOME ______ */
 
-    #texto-pequeño-video { 
-        font-size: 1rem; 
-    }
+  .letra-video h1 { 
+    font-size: 10rem; 
+  }
 
-/* ___ FOOTER GENERAL ___  */
-    .footer-title { 
-        font-size: 1.9rem; 
-    }  
-
-    .footer-p { 
-        font-size: 0.75rem; 
-    } 
+  #texto-pequeño-video { 
+    font-size: 1rem; 
+  }
 
 
+/* ______ FOOTER GENERAL ______  */
 
-/* ___ CHOCOLATE ___ */
+  .footer-title { 
+    font-size: 1.9rem; 
+  }  
 
-    .marcas-choco h1 {
-        font-size: 3rem;
-    }
+  .footer-p { 
+    font-size: 0.75rem; 
+  } 
 
-    .btn-chocolate {
-        font-size: 1.3rem;
-    }
 
-    .hero-section-choco-sost p {
-        padding-left: 0rem;
-    }
+/* ______ HOMEPAGE ______ */
 
-    .hero-section-choco-sost {
-        padding-bottom: 4rem;
-    }
+/* TARJETAS HOME */
+
+ .card-home img {
+    margin: 0rem;
+  }
+
+  .tarjetas-home .card-home {
+    height: 95%;
+  }
+
+  .card-title-home {
+    padding-top: 1rem;
+  }
+
+  /* ALIMENTANDO FUTURO SOSTENIBLE - HOMEPAGE */
+
+  .hero-section h1 {
+    padding-top: 4rem;
+    padding-right: 0rem;
+  }
+
+  .hero-section p {
+    padding-right: 0rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .hero-section img {
+    width: 68%;
+    padding-bottom: 3rem;
+  }
+
+  .our-marcas-home {
+    font-size: 3rem;
+  }
+
+  .logos {
+    padding: 6rem;
+  }
+
+/* ______ CHOCOLATE ______ */
+
+  .marcas-choco h1 {
+    font-size: 3rem;
+  }
+
+  .btn-chocolate {
+    font-size: 1.3rem;
+  }
+
+  .hero-section-choco-sost p {
+    padding-left: 0rem;
+  }
+
+  .hero-section-choco-sost {
+    padding-bottom: 4rem;
+  }
 
 
 }
 
 @media (max-width: 575px) {
 
-  /* ___ CHOCOLATES ___ */
+/* ______ HOMEPAGE ______ */
+
+/* ALIMENTANDO FUTURO SOSTENIBLE - HOMEPAGE */
+
+  .hero-section h1 {
+    padding-left: 1rem;
+  }
+  
+  .hero-section p {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .hero-section img {
+    padding-left: 2rem;
+  }
+
+  .row>* {
+    padding-right: 0rem;
+    padding-left: 0rem;
+  }
+
+  /* ______ CHOCOLATES ______ */
 
   .hero-section-choco-sost h1 {
     padding-left: 0rem !important; 
@@ -1200,90 +1267,104 @@ color: var(--Marron_oscuro);
 
 @media (min-width: 480px) and (max-width: 575px) {
 
-/* ___ VIDEO HOME ___ */
-    .letra-video h1 { 
-        font-size: 8rem; 
-    }
+/* ______ VIDEO HOME ______ */
 
-    #texto-pequeño-video { 
-        font-size: 0.7rem; 
-    }
+  .letra-video h1 { 
+    font-size: 8rem; 
+  }
 
-/* ___ FOOTER ___ */
+  #texto-pequeño-video { 
+    font-size: 0.7rem; 
+  }
 
-    footer, 
-    .footer-container, 
-    .footer-row, 
-    .footer-col {
-        max-width: 100%;
-        overflow-x: hidden;
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
+/* ______ FOOTER ______ */
 
-    /* Evita que padding lateral genere overflow */
-    .footer-col {
-        padding-left: 1rem;
-        padding-right: 2rem;
-    }
+  footer, 
+  .footer-container, 
+  .footer-row, 
+  .footer-col {
+    max-width: 100%;
+    overflow-x: hidden;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 
-    /* El formulario se contrae correctamente */
-    .footer-form {
-        width: 90%;
-    }
+  .footer-col {
+    padding-left: 1rem;
+    padding-right: 2rem;
+  }
 
-    .footer-form input {
-        min-width: 0;     /* MUY IMPORTANTE */
-        flex: 1 1 auto;
-    }
+  .footer-form {
+    width: 90%;
+  }
+
+  .footer-form input {
+    min-width: 0;  
+    flex: 1 1 auto;
+  }
 
 
 }
 
 @media (min-width: 400px) and (max-width: 479px) {
 
-/* ___ VIDEO HOME ___ */
-    .letra-video h1 { 
-        font-size: 6rem; 
-    }
-    #texto-pequeño-video { 
-        font-size: 0.6rem; 
-    }
+/* ______ VIDEO HOME ______ */
 
-/* ___ FOOTER ___ */
+  .letra-video h1 { 
+      font-size: 6rem; 
+  }
+  #texto-pequeño-video { 
+      font-size: 0.6rem; 
+  }
 
-    footer, 
-    .footer-container, 
-    .footer-row, 
-    .footer-col {
-        max-width: 100%;
-        overflow-x: hidden;
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
+/* ______ FOOTER ______ */
 
-    /* Evita que padding lateral genere overflow */
-    .footer-col {
-        padding-left: 1rem;
-        padding-right: 2rem;
-    }
+  footer, 
+  .footer-container, 
+  .footer-row, 
+  .footer-col {
+    max-width: 100%;
+    overflow-x: hidden;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 
-    /* El formulario se contrae correctamente */
-    .footer-form {
-        width: 90%;
-    }
+  .footer-col {
+    padding-left: 1rem;
+    padding-right: 2rem;
+  }
 
-    .footer-form input {
-        min-width: 0;     /* MUY IMPORTANTE */
-        flex: 1 1 auto;
-    }
+  .footer-form {
+    width: 90%;
+  }
+
+  .footer-form input {
+    min-width: 0;    
+    flex: 1 1 auto;
+  }
 
 
 }
 
 @media (max-width: 400px) {
 
-/* ___ CHOCOLATES ___ */
+/* ______ HOMEPAGE ______ */
+
+/* ALIMENTANDO FUTURO SOSTENIBLE - HOMEPAGE */
+
+  .hero-section img {
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  /* LOGOS HOMEPAGE */
+
+  .logos:before, .logos:after {
+    width: 0px;
+  }
+
+/* CHOCOLATES */
 
   .marcas-choco img {
     height: 133px;
@@ -1293,49 +1374,49 @@ color: var(--Marron_oscuro);
     padding: 5rem 2rem;
   }
 
-
-
-
 }
+
+
+
 
 @media (max-width: 399px) {
 
-/* ___ VIDEO HOME ___ */
-    .letra-video h1 { 
-        font-size: 4.5rem; 
-    }
+/* ______ VIDEO HOME ______ */
+  .letra-video h1 { 
+    font-size: 4.5rem; 
+  }
 
-    #texto-pequeño-video { 
-        font-size: 0.55rem; 
-        line-height: 1.25; 
-    }
+  #texto-pequeño-video { 
+    font-size: 0.55rem; 
+    line-height: 1.25; 
+  }
 
-/* ___ FOOTER ___ */
+/* ______ FOOTER ______ */
 
-    footer, 
-    .footer-container, 
-    .footer-row, 
-    .footer-col {
-        max-width: 100%;
-        overflow-x: hidden;
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
+  footer, 
+  .footer-container, 
+  .footer-row, 
+  .footer-col {
+    max-width: 100%;
+    overflow-x: hidden;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 
-    /* Evita que padding lateral genere overflow */
-    .footer-col {
-        padding-left: 1rem;
-        padding-right: 2rem;
-    }
+  .footer-col {
+    padding-left: 1rem;
+    padding-right: 2rem;
+  }
 
-    /* El formulario se contrae correctamente */
-    .footer-form {
-        width: 90%;
-    }
+  .footer-form {
+    width: 90%; 
+  }
 
-    .footer-form input {
-        min-width: 0;     /* MUY IMPORTANTE */
-        flex: 1 1 auto;
-    }
+  .footer-form input {
+    min-width: 0;    
+    flex: 1 1 auto;
+  }
+
+
 }
 
