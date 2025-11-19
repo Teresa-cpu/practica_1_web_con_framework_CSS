@@ -1077,6 +1077,14 @@ color: var(--Marron_oscuro);
     height: 133px I !important;
   }
 
+  .hero-section-choco-sost p {
+    font-size: 1rem;
+  }
+
+  .hero-section-choco-sost h1 {
+    font-size: 2rem;
+  }
+
 }
 
 
